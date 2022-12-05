@@ -1,0 +1,1295 @@
+Delivered-To: relaxationmusicstressfree@gmail.com
+Received: from [35.163.82.38] ([35.163.82.38:1479] helo=r143.mail.adobe.com)
+	by momentum03.or1.cpt.adobe.net (envelope-from <adobe1apacmid@mail.adobe.com>) (ecelerity 4.2.31.59853 r(Core:4.2.31.1))
+	with ESMTP id B8/D5-29364-858B4D26; Sun, 17 Jul 2022 18:33:12 -0700
+X-Google-Smtp-Source: AGRyM1upWyEcRJxSIXcdoKGvnf4YcAgM5ZqS5RNWLaqXti2Y6bEViZTds66+O6V99nTrRCBswAg0
+X-Received: by 2002:a17:902:e153:b0:16b:dccf:5a89 with SMTP id
+ d19-20020a170902e15300b0016bdccf5a89mr26086069pla.69.1658108229835;       
+ Sun, 17 Jul 2022 18:37:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1658108229; cv=none; d=google.com;
+	s=arc-20160816;
+	b=JjLT3dyta2TVR/RQmp6Y8xCndmG7cIpnDt5QXEm4wW4j2NXqjCeOcAorNODuak/udFOiU87uMpp
+	gRhfQkv8jbPywxeexbYG3N7iAdLnj2udZkXcH+2n7+8QkN14SRQpwaRkM62Z8h+/ZbreLDCZKKkgy
+	1pq7SYwFmVCGbNU3lAJD9En7pr3B+yxTdKrjgDsUwz0ktzdFifavQ45Xn193voLF26CgJKQkSW4O4
+	uRr+z7qf5IYsvX5dV3zuucdBNJQhUQrQ6DhCcyEVErxRFYR7m9TQRH94Ya+YGTgIbjKroIKIodyza
+	il7tO3UvAsW2b8O8mlLqgcR7vBCnoocuHDdQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+	s=arc-20160816;
+	h=content-transfer-encoding:precedence:list-id:list-unsubscribe:message-id:
+	mime-version:reply-to:to:date:subject:from:dkim-signature;
+	bh=QkzjnWZxiSgBsDaRpzSziAooPO476N6n3Dh5RDRFLZc=;
+	b=LhLdEF1cp0K8JrYhb0Lw/6OVrxPTz3NLhIopXWu3gvTmmRIM+M2Nj/fQVekDM2Or8D9Qz61sfM9
+	MEATfwj+uT/99eSqDrvug2JCbVm6MSjmzT9zjtvwQe9/xzfUWP6j2ukg3GjXTL0AIAQyBlUdQljuT
+	kxB9caukOmaDS1cVURHCuG9bywNl5R2c8jcT+Cd7rur6K8xvvyuFO6m2oDu/M8/PEECngM0ZqJVPJ
+	MvXhCjqIKOPd/sEmjc5YQh1rDM4YwnQMQKnjeSTULWJrs53/dh81PG8vE6rzqxharkBdD/80YFSli
+	W2UrmRe7skag5ChZEYoGxQ7eqPRU6V7ehT6A==
+ARC-Authentication-Results: i=1; mx.google.com;
+	dkim=pass header.i=@mail.adobe.com header.s=neolane header.b=jjqAouDH;
+	spf=pass
+	(google.com: domain of adobe1apacmid@mail.adobe.com designates 192.243.228.143 as permitted sender)
+	smtp.mailfrom=adobe1apacmid@mail.adobe.com;
+	dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mail.adobe.com
+Return-Path: <adobe1apacmid@mail.adobe.com>
+Received-SPF: pass (google.com: domain of adobe1apacmid@mail.adobe.com
+ designates 192.243.228.143 as permitted sender) client-ip=192.243.228.143;
+Authentication-Results: mx.google.com;
+	dkim=pass header.i=@mail.adobe.com header.s=neolane header.b=jjqAouDH;
+	spf=pass
+	(google.com: domain of adobe1apacmid@mail.adobe.com designates 192.243.228.143 as permitted sender)
+	smtp.mailfrom=adobe1apacmid@mail.adobe.com;
+	dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mail.adobe.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mail.adobe.com;
+	s=neolane; t=1658107992;
+	bh=QkzjnWZxiSgBsDaRpzSziAooPO476N6n3Dh5RDRFLZc=;
+	h=From:Subject:Date:To:MIME-Version:Message-ID:List-Unsubscribe:Content-Type;
+	b=jjqAouDHunvGEzE/ICTvg5YdlVDk+fHcvaXLnMlLxqHB6usFIxf3wpwe7mRetR3rJ89l+iqXSFT
+	c9Zm1AsADw+HHdEv3lQcNMGn9mQeuOq/gRL5XO/9VFV9FYTVnXa8Ee9se08qKbekmEDbcC4tx/VVQ
+	YCs2RyxPPnsiDgzr7vs=
+X-MSFBL: UOtRY8anCdT8p8DGmLrw3W/+FzqIljD4jmyl3B+tywI=|eyJiIjoiYXdzX2Fkb2J
+ laW50X3Byb2Q4X3Byb2QuZGVmYXVsdF9tb21lbnR1bTAzX210YTAwNl8xOTIuMjQ
+ zLjIyOC4xNDMiLCJnIjoicHJvZC5kZWZhdWx0XzQ3YjUzMWVjLWY5MzEtNDYwMS1
+ hMGU4LTIzZTE4MWRlYTBkMCIsInIiOiJyZWxheGF0aW9ubXVzaWNzdHJlc3NmcmV
+ lQGdtYWlsLmNvbSIsInJjcHRfbWV0YSI6eyAibSI6ICIxNzA4MDYyOTI0IiwgImQ
+ iOiAiNTQ0MDMwNjciLCAiaW4iOiAiYWRvYmVpbl9taWRfcHJvZDgiLCAiciI6ICJ
+ yZWxheGF0aW9ubXVzaWNzdHJlc3NmcmVlQGdtYWlsLmNvbSIgfX0=
+Date: Sun, 17 Jul 2022 18:33:09 -0700
+MIME-Version: 1.0
+X-mailer: nlserver, Build 6.7.0
+Message-ID: <NM665CEF8CC033E1FFBadobein_mid_prod8@mail.adobe.com>
+X-250ok-CID: adobeA492145_APAC-4823000_220717
+List-Unsubscribe: List-Unsubscribe: <mailto:
+ =?utf-8?q?adobe1apacmid=40mail=2Eadobe=2Ecom=3Fsubject=3Dunsubscribe%3CNM665CEF8C?=
+ =?utf-8?q?C033E1FFBadobein=5Fmid=5Fprod8=40mail=2Eadobe=2Ecom%3E=3E?=
+X-CSA-Complaints: whitelist-complaints@eco.de
+List-Id: <-427568759.neolane.client.com>
+Precedence: bulk
+Uid: 1820ef3b9bddd08a
+HtmlBody: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0
+ Transitional//EN"><HTML><HEAD></HEAD><BODY><html
+ xmlns="https://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"><head><link rel="icon"
+ href="https://www.adobe.com/favicon.ico" type="image/x-icon"><link
+ rel="shortcut icon" href="https://www.adobe.com/favicon.ico"
+ type="image/x-icon"><meta name="x-apple-disable-message-reformatting"><meta
+ http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta
+ name="viewport" content="width=device-width,initial-scale=1.0"><meta
+ name="format-detection" content="telephone=no"><meta name="format-detection"
+ content="date=no"><meta name="format-detection" content="address=no"><meta
+ name="format-detection" content="email=no"><title>Goodbye, disorganized
+ life</title><!--[if mso]><style type="text/css">body, table, td {font-family:
+ adobe-clean,Helvetica Neue, Helvetica, Verdana, Arial, sans-serif
+ !important;}</style><xml>  <o:OfficeDocumentSettings>    <o:AllowPNG/>   
+ <o:PixelsPerInch>96</o:PixelsPerInch> 
+ </o:OfficeDocumentSettings></xml><![endif]--><style type="text/css">@import
+ url("https://use.typekit.net/onr8tbr.css");.ReadMsgBody {
+ width:100%;}.ExternalClass {width:100%;}table {border-collapse:collapse;
+ margin:0 auto;}a, a:visited {color:#1473E6; text-decoration:none;}.legal a
+ {text-decoration:underline;}/* iOS BLUE LINKS */a[x-apple-data-detectors]
+ {color:inherit !important; text-decoration:none !important; font-size:inherit
+ !important; font-family:inherit !important; font-weight:inherit !important;
+ line-height:inherit !important;}.mobile
+ =?utf-8?q?{border-spacing=3A0=3Bdisplay=3Anone!important=3Bheight=3A0=3Bmax-height=3A?=
+ =?utf-8?q?0=3Bmso-hide=3Aall=3Boverflow=3Ahidden=3Bvisibility=3Ahidden=3Bwidth=3A0=3B}?=   
+ @media only screen and (max-width:480px) {    u ~ div {      min-width:100vw;   
+ }    div > u ~ div {          min-width: 100%;    }    .web {      
+ display:none !important;       }          .mobile {       display:block
+ !important;       width:auto !important;       overflow:visible !important;      
+ height:auto !important;       max-height:inherit !important;      
+ font-size:15px !important;       line-height:21px !important;      
+ visibility:visible !important;       }          .email-width {      
+ width:84% !important;       }     .column-width {       width:74% !important;      
+ }     .full-width {       width:100% !important;       }         
+ .mobile-image {       height:auto !important;       width:100% !important;      
+ }    .mobile-icon {       height:auto !important;       width:48px
+ !important;       }    .social {      float:left !important;     
+ padding-top:66px !important;      text-align:left !important;    }       
+ .header {      font-size:46px !important;      line-height:50px !important;   
+ }    .mobile-icon {       height:auto !important;       width:48px
+ !important;}  }</style></head><body bgcolor="#E4E4E4"
+ style="background-color:#E4E4E4; margin:0;
+ padding:0;-webkit-font-smoothing:antialiased;width:100%
+ !important;-webkit-text-size-adjust:none;" topmargin="0"><div
+ style="font-size:1px; color:#E4E4E4; display:none; overflow:hidden;
+ visibility:hidden;">Say hello to an efficient, productive future with the
+ Acrobat Reader mobile app.</div><table width="100%" bgcolor="#E4E4E4"
+ style="background-color:#E4E4E4;" border="0" cellpadding="0" cellspacing="0"
+ role="presentation">  <tr>    <td>      <table class="full-width"
+ align="center" width="600" border="0" cellpadding="0" cellspacing="0"
+ role="presentation" style="width:600px;">    <tr>           <td
+ bgcolor="#ffffff" style="background-color:#ffffff;">                      
+ <!-- pod1 -->            <table class="email-width" align="center"
+ width="500" border="0" cellpadding="0" cellspacing="0" role="presentation"
+ style="width:500px;">       <tr>              <td style="color:#2C2C2C;
+ font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial,
+ sans-serif; font-size:18px; line-height:26px; padding-top:48px;">         
+ <table align="left" width="auto" border="0" cellpadding="0" cellspacing="0"
+ role="presentation">            <tr>            <td valign="middle"
+ style="color:#000000; font-family:adobe-clean, Arial, Helvetica, sans-serif;
+ font-size:14px; line-height:20px;"><img alt=""
+ =?utf-8?q?src=3D=22https=3A=2F=2Flanding=2Eadobe=2Ecom=2Fdam=2Fglobal=2Fimages=2Facrobat-pro-?=
+ =?utf-8?q?dc=2Emnemonic=2E480x468=2Epng=22?= width="30" height="auto"
+ border="0" hspace="0" vspace="0" style="display:block;
+ vertical-align:top;"/></td>            <td width="10"
+ style="width:10px;">&nbsp;</td>            <td valign="top"
+ style="color:#74777a; font-family:adobe-clean, Arial, Helvetica, sans-serif;
+ font-size:14px; line-height:20px;"><img alt="Adobe Acrobat Reader"
+ =?utf-8?q?src=3D=22https=3A=2F=2Fs7d9=2Escene7=2Ecom=2Fis=2Fimage=2FAdobeDemandCreative=2F=3Ffm?=
+ =?utf-8?q?t=3Dpng-alpha&size=3D410=2C60&wid=3D410&textAttr=3D144=2Cstrong&resolutio?=
+ =?utf-8?q?n=3D200&textPs=3D%7B%5C*%5Ciscolortbl%3B74777a%3B%5Cfonttbl%7B%5C?=
+ =?utf-8?q?f0%20Adobe%20Clean%20ExtraBold%3B%7D%7D%5Cf0%5Cfs40%5Csl-400%?=
+ =?utf-8?q?5Cvertalc%5Ckerningoptical%5Ccf1Adobe%20Acrobat%20Reader=22?=
+ width="205" height="30" border="0" hspace="0" vspace="0"
+ style="color:#74777a; font-family:adobe-clean, Arial, Helvetica, sans-serif;
+ font-size:14px; line-height:20px; display:block; vertical-align:top;"/></td>           
+ </tr>          </table>        </td>             </tr>       <tr>             
+ <td class="header" style="color:#000000; font-family:adobe-clean, Helvetica
+ Neue, Helvetica, Verdana, Arial, sans-serif; font-size:60px;
+ line-height:66px; padding-top:72px;"><strong>Let&#8217;s organise
+ <br/>together.</strong></td>             </tr>           <tr><td>              
+ <table class="full-width" align="left" width="464" border="0" cellpadding="0"
+ cellspacing="0" role="presentation" style="width:464px;">                         
+ <tr>              <td style="color:#000000; font-family:adobe-clean,
+ Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:18px;
+ line-height:26px; padding-top:30px;">Prepare for whatever life brings you.
+ Stay connected and organised on any device with the Acrobat&nbsp;Reader
+ mobile&nbsp;app.</td></tr></table>               </td>                          
+ </tr>             <tr>              <td style="color:#1473E6;
+ font-family:adobe-clean, Arial, Helvetica, sans-serif; font-size:15px;
+ line-height:20px; padding-top:40px; padding-bottom:100px;"><div><!--[if mso]>         
+ <table class="full-width" align="left" width="180" border="0" cellpadding="0"
+ cellspacing="0" role="presentation" style="width:180px;">          <tr>         
+ <td height="40" valign="middle" style="background-color:#1473E6; font-family:
+ adobe-clean, Arial, Helvetica, sans-serif; height:40px;">          <center>         
+ <![endif]-->          <a class="button"
+ =?utf-8?q?href=3D=22https=3A=2F=2Ft-info=2Email=2Eadobe=2Ecom=2Fr=2F=3Fid=3Dhe5257a87=2Cf8051325=2C?=
+ =?utf-8?q?bdcbc75e&e=3DcDE9VDMyUExTRkw&s=3DZ9Or-Kpg-4DaXxgKxqSg8Ijv-6ACpcxU?=
+ =?utf-8?q?Oavh7pJRoeI=22_target=3D=22=5Fblank=22?=
+ =?utf-8?q?_style=3D=22background-color=3A#1473E6=3Bborder-radius=3A20px=3Bcolor=3A#fff?=
+ =?utf-8?q?fff=3Bdisplay=3Ainline-block=3Bfont-size=3A16px=3Bline-height=3A40px=3Btext?=
+ =?utf-8?q?-align=3Acenter=3Btext-decoration=3Anone=3Bwidth=3A180px=3B-webkit-text-s?=
+ =?utf-8?q?ize-adjust=3Anone=3B=22=3E=3Cstrong=3EGet?= started</strong></a>         
+ <!--[if mso]>          </center>          </td>          </tr>         
+ </table>        <![endif]--></div>        </td>             </tr>                        
+ </table>            <!-- END pod1 -->      </td></tr>      <tr>           <td
+ bgcolor="#ffffff" style="background-color:#ffffff;">       <!-- pod1 marquee
+ -->            <table class="full-width" align="center" width="600"
+ border="0" cellpadding="0" cellspacing="0" role="presentation"
+ style="width:600px;">                          <tr>              <td
+ style="color:#000000; font-family:adobe-clean, Helvetica Neue, Helvetica,
+ Verdana, Arial, sans-serif; font-size:22px; line-height:28px;"><a
+ =?utf-8?q?href=3D=22https=3A=2F=2Ft-info=2Email=2Eadobe=2Ecom=2Fr=2F=3Fid=3Dhe5257a87=2Cf8051325=2C?=
+ =?utf-8?q?bdcbc75f&e=3DcDE9VDMyUExTRkw&s=3DFzk6DWrgmBKsR0R2zt6R50fY-fRXPuDX?=
+ =?utf-8?q?2ns37B07alk=22?= target="_blank" style="color:#1473E6;"><img
+ class="mobile-image"                 alt="Let's organise together."                
+ =?utf-8?q?src=3D=22https=3A=2F=2Flanding=2Eadobe=2Ecom=2Fcontent=2Fdam=2Flanding=2Fuploads=2F20?=
+ =?utf-8?q?20=2Fapac=2FDSCF9689=5F1200=5F800=2Ejpg=22?=
+ =?utf-8?q?________srcset=3D=22https=3A=2F=2Flanding=2Eadobe=2Ecom=2Fcontent=2Fdam=2Flanding=2Fuploads?=
+ =?utf-8?q?=2F2020=2Fapac=2FDSCF9689=5F800=5F533=2Ejpg_621w=2C?=
+ =?utf-8?q?________https=3A=2F=2Flanding=2Eadobe=2Ecom=2Fcontent=2Fdam=2Flanding=2Fuploads=2F2020=2Fap?=
+ =?utf-8?q?ac=2FDSCF9689=5F1200=5F800=2Ejpg?= 1200w"        sizes="(max-width:
+ 480px) 50vw"        width="600" height="auto"         border="0" hspace="0"
+ vspace="0" style="color:#000000; font-family:adobe-clean, Helvetica Neue,
+ Helvetica, Verdana, Arial, sans-serif; font-size:22px; line-height:28px;
+ display:block; vertical-align:top;"/>        </a></td>             </tr>           
+ </table>            <!-- END pod1 marquee -->                      <!-- 2
+ columns -->      <table class="column-width" align="center" width="480"
+ border="0" cellpadding="0" cellspacing="0" role="presentation"
+ style="width:480px;">       <!-- FEATURE 1 -->             <tr>             
+ <td align="center" valign="top" style="margin:0 auto; vertical-align:top;
+ padding-top:100px;">                  <div style="font-size:0;">           
+ <!--[if mso]>            <table border="0" cellpadding="0" cellspacing="0"
+ role="presentation"align="center"><tr><td align="center" valign="top"
+ width="38%">            <![endif]-->            <div
+ style="display:inline-block; vertical-align:top; width:38%; min-width:140px;
+ max-width:100%; width:-webkit-calc(230400px - 48000%);
+ min-width:-webkit-calc(38%); width:calc(230400px - 48000%);
+ min-width:calc(38%);">            <!-- left -->            <table
+ align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+ width="100%">             <tr>                            <td valign="top"
+ style="color:#505050; font-family:adobe-clean, Helvetica Neue, Helvetica,
+ Verdana, Arial, sans-serif; font-size:36px; line-height:40px;
+ padding-bottom:32px; vertical-align:top;"><img class="mobile-icon"
+ align="left"                alt="Take scanning into your own&nbsp;hands"                
+ =?utf-8?q?src=3D=22https=3A=2F=2Flanding=2Eadobe=2Ecom=2Fdam=2Fglobal=2Fimages=2Ficon-scan=2E00?=
+ =?utf-8?q?0000=2E130x130=2Epng=22?=
+ =?utf-8?q?_________srcset=3D=22https=3A=2F=2Flanding=2Eadobe=2Ecom=2Fdam=2Fglobal=2Fimages=2Ficon-scan?=
+ =?utf-8?q?=2E000000=2E96x96=2Epng?= 621w,
+ https://landing.adobe.com/dam/global/images/icon-scan.000000.130x130.png
+ 1200w"        sizes="(max-width: 480px) 50vw"        width="65" height="auto"       
+ border="0" hspace="0" vspace="0" style="color:#2A2A2A;
+ font-family:adobe-clean, Arial, Helvetica, sans-serif; font-size:20px;
+ line-height:24px; display:inline-block; vertical-align:top;
+ align:left;"/></td>                           </tr>            </table>           
+ <!-- END left -->            </div>            <!--[if mso]></td><td
+ align="center" valign="top" width="50%">            <![endif]-->           
+ <div style="display:inline-block; vertical-align:top; width:50%;
+ min-width:284px; max-width:100%; width:-webkit-calc(230400px - 48000%);
+ min-width:-webkit-calc(50%); width:calc(230400px - 48000%);
+ min-width:calc(50%);">            <!-- right -->            <table
+ align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+ width="100%">             <tr>                            <td
+ style="color:#000000; font-family:adobe-clean, Helvetica Neue, Helvetica,
+ Verdana, Arial, sans-serif; font-size:22px; line-height:29px;
+ padding-bottom:6px;"><strong>Take scanning into your
+ own&nbsp;hands.</strong></td>                           </tr>            
+ <tr>                            <td style="color:#505050;
+ font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial,
+ sans-serif; font-size:16px; line-height:24px;">Create, save, and organise any
+ paper documents as a digital file with your smartphone or&nbsp;tablet. <a
+ =?utf-8?q?href=3D=22https=3A=2F=2Ft-info=2Email=2Eadobe=2Ecom=2Fr=2F=3Fid=3Dhe5257a87=2Cf8051325=2C?=
+ =?utf-8?q?bdcbc760&e=3DcDE9VDMyUExTRkw&s=3D7T2WGikuLg9I6N4OvPYiLyU55-jbS4LT?=
+ =?utf-8?q?drkvb=5Fwjr5U=22?= target="_blank" style="color:#1473e6;
+ white-space: nowrap;">Get&nbsp;started</a></td>                          
+ </tr>            </table>            <!-- END right -->            </div>         
+ <!--[if mso]>          </td></tr></table>          <![endif]-->         
+ </div>                </td>             </tr>       <!-- end FEATURE 1 -->            
+ <!-- FEATURE 3 -->       <tr>              <td align="center" valign="top"
+ style="margin:0 auto; vertical-align:top; padding-top:100px;">                 
+ <div style="font-size:0;">            <!--[if mso]>            <table
+ border="0" cellpadding="0" cellspacing="0"
+ role="presentation"align="center"><tr><td align="center" valign="top"
+ width="38%">            <![endif]-->            <div
+ style="display:inline-block; vertical-align:top; width:38%; min-width:140px;
+ max-width:100%; width:-webkit-calc(230400px - 48000%);
+ min-width:-webkit-calc(38%); width:calc(230400px - 48000%);
+ min-width:calc(38%);">            <!-- left -->            <table
+ align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+ width="100%">             <tr>                            <td valign="top"
+ style="color:#505050; font-family:adobe-clean, Helvetica Neue, Helvetica,
+ Verdana, Arial, sans-serif; font-size:36px; line-height:40px;
+ padding-bottom:32px; vertical-align:top;"><img class="mobile-icon"
+ align="left"                alt="Easy peasy PDFs"                
+ =?utf-8?q?src=3D=22https=3A=2F=2Flanding=2Eadobe=2Ecom=2Fdam=2Fglobal=2Fimages=2Fpencil-icon=2E?=
+ =?utf-8?q?black=2E130x130=2Epng=22?=
+ =?utf-8?q?_________srcset=3D=22https=3A=2F=2Flanding=2Eadobe=2Ecom=2Fdam=2Fglobal=2Fimages=2Fpencil-ic?=
+ =?utf-8?q?on=2Eblack=2E96x96=2Epng?= 621w,
+ https://landing.adobe.com/dam/global/images/pencil-icon.black.130x130.png
+ 1200w"        sizes="(max-width: 480px) 50vw"        width="65" height="auto"       
+ border="0" hspace="0" vspace="0" style="color:#2A2A2A;
+ font-family:adobe-clean, Arial, Helvetica, sans-serif; font-size:20px;
+ line-height:24px; display:inline-block; vertical-align:top;
+ align:left;"/></td>                           </tr>            </table>           
+ <!-- END left -->            </div>            <!--[if mso]></td><td
+ align="center" valign="top" width="50%">            <![endif]-->           
+ <div style="display:inline-block; vertical-align:top; width:50%;
+ min-width:284px; max-width:100%; width:-webkit-calc(230400px - 48000%);
+ min-width:-webkit-calc(50%); width:calc(230400px - 48000%);
+ min-width:calc(50%);">            <!-- right -->            <table
+ align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+ width="100%">             <tr>                            <td
+ style="color:#000000; font-family:adobe-clean, Helvetica Neue, Helvetica,
+ Verdana, Arial, sans-serif; font-size:22px; line-height:29px;
+ padding-bottom:6px;"><strong>Easy peasy PDFs.</strong></td>                          
+ </tr>             <tr>                            <td style="color:#505050;
+ font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial,
+ sans-serif; font-size:16px; line-height:24px;">Edit a PDF instantly. Change
+ text and images in PDFs online and on&nbsp;time. <a
+ =?utf-8?q?href=3D=22https=3A=2F=2Ft-info=2Email=2Eadobe=2Ecom=2Fr=2F=3Fid=3Dhe5257a87=2Cf8051325=2C?=
+ =?utf-8?q?bdcbc761&e=3DcDE9VDMyUExTRkw&s=3DCTGENlVVLT9e=5F=5FrnLQjcsOMIqcChWJxY?=
+ =?utf-8?q?Q--pDVmWn2Q=22?= target="_blank" style="color:#1473e6; white-space:
+ nowrap;">Get&nbsp;started</a></td>                           </tr>           
+ </table>            <!-- END right -->            </div>          <!--[if
+ mso]>          </td></tr></table>          <![endif]-->          </div>               
+ </td>             </tr>       <!-- end FEATURE 3 -->                 
+ </table>            <!-- END 2 columns -->               <!-- CTA-1 -->           
+ <table class="column-width" align="center" width="480" border="0"
+ cellpadding="0" cellspacing="0" role="presentation" style="width:480px;">            
+ <tr>              <td style="color:#1473E6; font-family:adobe-clean, Arial,
+ Helvetica, sans-serif; font-size:15px; line-height:20px; padding-top:80px;
+ padding-bottom:100px;"><div><!--[if mso]>          <table class="full-width"
+ align="left" width="180" border="0" cellpadding="0" cellspacing="0"
+ role="presentation" style="width:180px;">          <tr>          <td
+ height="40" valign="middle" style="background-color:#1473E6; font-family:
+ adobe-clean, Arial, Helvetica, sans-serif; height:40px;">          <center>         
+ <![endif]-->          <a class="button"
+ =?utf-8?q?href=3D=22https=3A=2F=2Ft-info=2Email=2Eadobe=2Ecom=2Fr=2F=3Fid=3Dhe5257a87=2Cf8051325=2C?=
+ =?utf-8?q?bdcbc762&e=3DcDE9VDMyUExTRkw&s=3DTnE1JOT6ZUsTj3Y=5FCtBU1vd295QuDDs3?=
+ =?utf-8?q?qqhVs3o1OSE=22_target=3D=22=5Fblank=22?=
+ =?utf-8?q?_style=3D=22background-color=3A#1473E6=3Bborder-radius=3A20px=3Bcolor=3A#fff?=
+ =?utf-8?q?fff=3Bdisplay=3Ainline-block=3Bfont-size=3A16px=3Bline-height=3A40px=3Btext?=
+ =?utf-8?q?-align=3Acenter=3Btext-decoration=3Anone=3Bwidth=3A180px=3B-webkit-text-s?=
+ =?utf-8?q?ize-adjust=3Anone=3B=22=3E=3Cstrong=3EGet?= started</strong></a>         
+ <!--[if mso]>          </center>          </td>          </tr>         
+ </table>        <![endif]--></div>        </td>             </tr>           
+ </table>            <!-- END CTA-1 -->           <!-- END email content -->          
+ </td>        </tr>    <tr>    <td bgcolor="#F5F5F5"
+ style="background-color:#F5F5F5;">      <!-- banner -->            <table
+ class="full-width" align="center" width="600" border="0" cellpadding="0"
+ cellspacing="0" role="presentation" bgcolor="#FA0F00"
+ style="background-color:#FA0F00; width:600px;">       <tr>        <td
+ class="web" width="20" style="width:20px;">&nbsp;</td>        <td width="30"
+ style="width:30px;">&nbsp;</td>              <td style="color:#ffffff;
+ font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial,
+ sans-serif; font-size:15px; line-height:20px; padding-top:5px;
+ padding-bottom:5px;"><strong>Business moves with Adobe.</strong></td>       
+ <td width="30" style="width:30px;">&nbsp;</td>        <td class="web"
+ width="20" style="width:20px;">&nbsp;</td>             </tr>           
+ </table>      <!-- END banner -->             <!-- logo & social -->     
+ <table class="email-width" align="center" width="500" border="0"
+ cellpadding="0" cellspacing="0" role="presentation" style="width:500px;">    
+ <tr>      <td valign="middle" style="padding-top:50px;">        <div
+ style="font-size:0;">          <!--[if mso]>          <table
+ class="email-width" align="center" width="500" border="0" cellpadding="0"
+ cellspacing="0" role="presentation" style="width:500px;"><tr><td align="left"
+ valign="middle" width="50%">          <![endif]-->          <div
+ style="display:inline-block; vertical-align:middle; width:50%;
+ min-width:250px; max-width:100%; width:-webkit-calc(230400px - 48000%);
+ min-width:-webkit-calc(50%); width:calc(230400px - 48000%);
+ min-width:calc(50%);">          <!-- left -->          <table align="left"
+ border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">          
+ <tr>            <td style="color:#EB1000; font-family:adobe-clean, Helvetica
+ Neue, Helvetica, Verdana, Arial, sans-serif; font-size:12px;
+ line-height:18px;"><img alt="Adobe"
+ =?utf-8?q?src=3D=22https=3A=2F=2Flanding=2Eadobe=2Ecom=2Fdam=2Fglobal=2Fimages=2Fadobe-logo=2Ec?=
+ =?utf-8?q?lassic=2E160x222=2Epng=22?= width="30" height="auto" border="0"
+ hspace="0" vspace="0" style="color:#EB1000; font-family:adobe-clean,
+ Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:12px;
+ line-height:18px; display:block; vertical-align:top;"/></td>           </tr>         
+ </table>          <!-- END left -->          </div>          <!--[if mso]>         
+ </td><td align="right" valign="middle" width="50%">          <![endif]-->         
+ <div style="display:inline-block; vertical-align:middle; width:50%;
+ min-width:250px; max-width:100%; width:-webkit-calc(230400px - 48000%);
+ min-width:-webkit-calc(50%); width:calc(230400px - 48000%);
+ min-width:calc(50%);">          <!-- right -->          <table class="social"
+ align="right" width="auto" border="0" cellpadding="0" cellspacing="0"
+ role="presentation" style="float:right;">           <tr>            <td
+ style="color:#959595; font-family:adobe-clean, Helvetica Neue, Helvetica,
+ Verdana, Arial, sans-serif; font-size:12px; line-height:12px;"><a
+ href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc763"
+ alias="Facebook" target="_blank"><img class="social" alt="Facebook"
+ src="https://landing.adobe.com/dam/global/images/social/facebook.959595.png"
+ width="9" height="17" border="0" hspace="0" vspace="0" style="display:block;
+ vertical-align:top;"/></a></td>            <td width="30"
+ style="width:30px;">&nbsp;</td>            <td style="color:#959595;
+ font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial,
+ sans-serif; font-size:12px; line-height:12px;"><a
+ href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc764"
+ alias="LinkedIn" target="_blank"><img class="social" alt="LinkedIn"
+ src="https://landing.adobe.com/dam/global/images/social/linkedin.959595.png"
+ width="17" height="17" border="0" hspace="0" vspace="0" style="display:block;
+ vertical-align:top;"/></a></td>            <td width="30"
+ style="width:30px;">&nbsp;</td>            <td style="color:#959595;
+ font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial,
+ sans-serif; font-size:12px; line-height:12px;"><a
+ href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc73f"
+ alias="Twitter" target="_blank"><img class="social" alt="Twitter"
+ src="https://landing.adobe.com/dam/global/images/social/twitter.959595.png"
+ width="21" height="17" border="0" hspace="0" vspace="0" style="display:block;
+ vertical-align:top;"/></a></td>           </tr>          </table>         
+ <!-- END right -->          </div>        <!--[if mso]>       
+ </td></tr></table>        <![endif]-->        </div>      </td>       </tr>     
+ </table>            <!-- END logo & social -->                <!-- legal-->     
+ <table class="email-width" align="center" width="500" border="0"
+ cellpadding="0" cellspacing="0" role="presentation"
+ style="width:500px;"><tr><td class="legal" style="color:#959595;
+ font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial,
+ sans-serif; font-size:11px; line-height:18px; padding-top:50px;
+ padding-bottom:100px;">   Adobe, the Adobe logo, Creative Cloud, and the
+ Creative Cloud logo are either registered trademarks or trademarks of Adobe
+ in the United States and/or other countries.<br/><br/>  This is not a
+ comprehensive list of Adobe trademarks. All other trademarks are the property
+ of their respective owners. <a
+ href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc740"
+ alias="FOOTER - Trademark Guidelines" target="_blank"
+ style="color:#959595;">Adobe Trademark Guidelines</a>. <br/><br/>&copy; 2022
+ Adobe Inc. All&nbsp;rights&nbsp;reserved.<br/><br/>This is a marketing email
+ from Adobe Systems Software Ireland Limited, 4-6 Riverwalk, Citywest Business
+ Park, Dublin 24, Ireland.  <a style="TEXT-DECORATION: underline; COLOR:
+ #a1a1a1"
+ =?utf-8?q?href=3D=22https=3A=2F=2Ft-info=2Email=2Eadobe=2Ecom=2Fr=2F=3Fid=3Dhe5257a87=2Cf8051325=2C?=
+ =?utf-8?q?bdcbc75a&e=3DcDE9JTQwWlVEUEJtZUg0eEVYRXpFUzY5ZnU4VmJqUkdOT3RQQV?=
+ =?utf-8?q?ZQMWdQMGhBNDc2V1laOU4yenBPTjRZM1BsZHQ4WjB2aSZwMj0mbG9jPWluJnA?=
+ =?utf-8?q?zPTM1&s=3D5ezSIzS7YQ4R8fPW-fUPOQqmAIXRYbrLLGz20Vb0tPU=22?=
+ target="_blank" class="opt_out" alias="Unsubscribe" _type="optout"
+ _label="Opt-out link">Click&nbsp;here</A>  to unsubscribe, or send an
+ unsubscribe request to the address above.<br/><br/>Your privacy is important
+ to us. Please review Adobe's Privacy Policy by clicking here:<br/><a
+ href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc742"
+ alias="FOOTER - Privacy Policy" target="_blank" style="color:#959595;
+ =?utf-8?q?text-decoration=3Aunderline=3B=22=3Ewww=2Eadobe=2Ecom=2Fin=2Fprivacy=2Ehtml=3C=2Fa=3E?=
+ =?utf-8?q?=2E=3Cbr=2F=3E=3Cbr=2F=3EPLEASE?= DO NOT REPLY TO THIS MESSAGE. To
+ obtain information on how to contact Adobe, visit the web at <a
+ href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc743"
+ target="_blank" style="color:#959595; text-decoration:underline;"
+ alias="FOOTER - Contact Adobe">helpx.adobe.com/in/support.html</a>. If you
+ have a privacy-related complaint, send it to <a
+ href="mailto:privacy@adobe.com"
+ =?utf-8?q?style=3D=22color=3A#959595=3Btext-decoration=3Aunderline=3B=22=3Eprivacy=40adob?=
+ =?utf-8?q?e=2Ecom=3C=2Fa=3E=2E=3Cbr=2F=3E=3Cdiv?= style="margin-bottom:12px;
+ margin-top:10px;color:#959595;">This email has been sent to <a
+ href="mailto:relaxationmusicstressfree@gmail.com"
+ =?utf-8?q?style=3D=22color=3A#959595=3Btext-decoration=3Aunderline=3B=22=3Erelaxationmu?=
+ =?utf-8?q?sicstressfree=40gmail=2Ecom=3C=2Fa=3E=3Cbr=3E=3Cbr=3E=3Cspan_class=3D=22web=22=3E=3Ca?=
+ =?utf-8?q?_href=3D=22https=3A=2F=2Ft-info=2Email=2Eadobe=2Ecom=2Fr=2F=3Fid=3Dhe5257a87=2Cf8051325=2C?=
+ =?utf-8?q?bdcbc76b&e=3DcDE9JTQwTWtCbjk1b2dzY3YlMkZ6T29pdmZJem03eEJZYm92Vk?=
+ =?utf-8?q?Q3eGdNMmptdUFySFU0JTNE&s=3DxfkpMOeaBANnchHb8WFtItCiuxHn6hg4ZhlP?=
+ =?utf-8?q?5yVdHsg=22?= _label="Mirror Page" _type="mirrorPage" alias="Read
+ online" target="_blank" style="color:#999999; text-decoration:
+ underline;">Read&nbsp;online</a></td></tr></table>      <!-- END legal-->         
+ </td>    </tr>    </table>    </td>  </tr></table></body></html>    <img
+ height='0' width='0' alt=''
+ src='https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,1'/><img
+ height='0' width='0' alt=''
+ =?utf-8?q?src=3D'https=3A=2F=2Fadobe=2Edemdex=2Enet=2Fevent=3Fc=5Fsyncplacement=3Demail&d=5Fc?=
+ =?utf-8?q?id=3D813%01586803e161d99cc10a495e62'=2F=3E=3C=2FBODY=3E=3C=2FHTML=3E?=
+From: Adobe Acrobat <demand@mail.adobe.com>
+Reply-To: Adobe Acrobat <demand@mail.adobe.com>
+To: relaxationmusicstressfree@gmail.com
+Subject: Goodbye, disorganized life
+Content-Type: multipart/alternative; boundary="=-27KK4vbJVzhpfKeqkOyjPQ=="
+
+--=-27KK4vbJVzhpfKeqkOyjPQ==
+Content-Type: text/html; charset=us-ascii
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+</HEAD>
+<BODY>
+
+
+
+
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<link rel="icon" href="https://www.adobe.com/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://www.adobe.com/favicon.ico" type="image/x-icon">
+<meta name="x-apple-disable-message-reformatting">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="date=no">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="email=no">
+<title>Goodbye, disorganized life</title>
+
+<!--[if mso]>
+<style type="text/css">
+body, table, td {
+font-family: adobe-clean,Helvetica Neue, Helvetica, Verdana, Arial, sans-serif !important;
+}
+</style>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+
+<style type="text/css">
+@import url("https://use.typekit.net/onr8tbr.css");
+.ReadMsgBody { width:100%;}
+.ExternalClass {width:100%;}
+table {border-collapse:collapse; margin:0 auto;}
+a, a:visited {color:#1473E6; text-decoration:none;}
+.legal a {text-decoration:underline;}
+/* iOS BLUE LINKS */
+a[x-apple-data-detectors] {color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important;}
+
+.mobile {border-spacing:0;display:none!important;height:0;max-height:0;mso-hide:all;overflow:hidden;visibility:hidden;width:0;}
+  
+  @media only screen and (max-width:480px) {
+    u ~ div {
+      min-width:100vw;
+    }
+    div > u ~ div {
+          min-width: 100%;
+    }
+    .web {
+       display:none !important;
+       }
+     
+     .mobile {
+       display:block !important;
+       width:auto !important;
+       overflow:visible !important;
+       height:auto !important;
+       max-height:inherit !important;
+       font-size:15px !important;
+       line-height:21px !important;
+       visibility:visible !important;
+       }
+     
+     .email-width {
+       width:84% !important;
+       }
+     .column-width {
+       width:74% !important;
+       }
+     .full-width {
+       width:100% !important;
+       }
+     
+     .mobile-image {
+       height:auto !important;
+       width:100% !important;
+       }
+    .mobile-icon {
+       height:auto !important;
+       width:48px !important;
+       }
+    .social {
+      float:left !important;
+      padding-top:66px !important;
+      text-align:left !important;
+    }
+    
+    .header {
+      font-size:46px !important;
+      line-height:50px !important;
+    }
+    .mobile-icon {       height:auto !important;
+       width:48px !important;
+}
+  }
+
+
+</style>
+</head>
+
+<body bgcolor="#E4E4E4" style="background-color:#E4E4E4; margin:0; padding:0;-webkit-font-smoothing:antialiased;width:100% !important;-webkit-text-size-adjust:none;" topmargin="0"><div style="font-size:1px; color:#E4E4E4; display:none; overflow:hidden; visibility:hidden;">Say hello to an efficient, productive future with the Acrobat Reader mobile app.</div>
+
+<table width="100%" bgcolor="#E4E4E4" style="background-color:#E4E4E4;" border="0" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td>
+      <table class="full-width" align="center" width="600" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;">
+    <tr>
+           <td bgcolor="#ffffff" style="background-color:#ffffff;">
+           
+            <!-- pod1 -->
+            <table class="email-width" align="center" width="500" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:500px;">
+       <tr>
+              <td style="color:#2C2C2C; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:18px; line-height:26px; padding-top:48px;">
+          <table align="left" width="auto" border="0" cellpadding="0" cellspacing="0" role="presentation">
+            <tr>
+            <td valign="middle" style="color:#000000; font-family:adobe-clean, Arial, Helvetica, sans-serif; font-size:14px; line-height:20px;"><img alt="" src="https://landing.adobe.com/dam/global/images/acrobat-pro-dc.mnemonic.480x468.png" width="30" height="auto" border="0" hspace="0" vspace="0" style="display:block; vertical-align:top;"/></td>
+            <td width="10" style="width:10px;">&nbsp;</td>
+            <td valign="top" style="color:#74777a; font-family:adobe-clean, Arial, Helvetica, sans-serif; font-size:14px; line-height:20px;"><img alt="Adobe Acrobat Reader" src="https://s7d9.scene7.com/is/image/AdobeDemandCreative/?fmt=png-alpha&size=410,60&wid=410&textAttr=144,strong&resolution=200&textPs=%7B%5C*%5Ciscolortbl%3B74777a%3B%5Cfonttbl%7B%5Cf0%20Adobe%20Clean%20ExtraBold%3B%7D%7D%5Cf0%5Cfs40%5Csl-400%5Cvertalc%5Ckerningoptical%5Ccf1Adobe%20Acrobat%20Reader" width="205" height="30" border="0" hspace="0" vspace="0" style="color:#74777a; font-family:adobe-clean, Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; display:block; vertical-align:top;"/></td>
+            </tr>
+          </table>
+        </td>
+             </tr>
+       <tr>
+              <td class="header" style="color:#000000; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:60px; line-height:66px; padding-top:72px;"><strong>Let&#8217;s organise <br/>together.</strong></td>
+             </tr>
+           <tr><td>
+               <table class="full-width" align="left" width="464" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:464px;">
+            
+              <tr>
+              <td style="color:#000000; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:18px; line-height:26px; padding-top:30px;">Prepare for whatever life brings you. Stay connected and organised on any device with the Acrobat&nbsp;Reader mobile&nbsp;app.</td></tr></table>
+               </td>
+              
+             </tr>
+             <tr>
+              <td style="color:#1473E6; font-family:adobe-clean, Arial, Helvetica, sans-serif; font-size:15px; line-height:20px; padding-top:40px; padding-bottom:100px;"><div><!--[if mso]>
+          <table class="full-width" align="left" width="180" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:180px;">
+          <tr>
+          <td height="40" valign="middle" style="background-color:#1473E6; font-family: adobe-clean, Arial, Helvetica, sans-serif; height:40px;">
+          <center>
+          <![endif]-->
+          <a class="button" href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc75e&e=cDE9VDMyUExTRkw&s=Z9Or-Kpg-4DaXxgKxqSg8Ijv-6ACpcxUOavh7pJRoeI" target="_blank" style="background-color:#1473E6;border-radius:20px;color:#ffffff;display:inline-block;font-size:16px;line-height:40px;text-align:center;text-decoration:none;width:180px;-webkit-text-size-adjust:none;"><strong>Get started</strong></a>
+          <!--[if mso]>
+          </center>
+          </td>
+          </tr>
+          </table>
+        <![endif]--></div>
+        </td>
+             </tr>
+             
+            </table>
+            <!-- END pod1 -->
+      </td></tr>
+      <tr>
+           <td bgcolor="#ffffff" style="background-color:#ffffff;">
+       <!-- pod1 marquee -->
+            <table class="full-width" align="center" width="600" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;">
+            
+              <tr>
+              <td style="color:#000000; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:22px; line-height:28px;"><a href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc75f&e=cDE9VDMyUExTRkw&s=Fzk6DWrgmBKsR0R2zt6R50fY-fRXPuDX2ns37B07alk" target="_blank" style="color:#1473E6;"><img class="mobile-image" 
+                alt="Let's organise together."
+                 src="https://landing.adobe.com/content/dam/landing/uploads/2020/apac/DSCF9689_1200_800.jpg"
+        srcset="https://landing.adobe.com/content/dam/landing/uploads/2020/apac/DSCF9689_800_533.jpg 621w,
+        https://landing.adobe.com/content/dam/landing/uploads/2020/apac/DSCF9689_1200_800.jpg 1200w"
+        sizes="(max-width: 480px) 50vw"
+        width="600" height="auto" 
+        border="0" hspace="0" vspace="0" style="color:#000000; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:22px; line-height:28px; display:block; vertical-align:top;"/>
+        </a></td>
+             </tr>
+            </table>
+            <!-- END pod1 marquee -->    
+            
+      <!-- 2 columns -->
+      <table class="column-width" align="center" width="480" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:480px;">
+       <!-- FEATURE 1 -->
+             <tr>
+              <td align="center" valign="top" style="margin:0 auto; vertical-align:top; padding-top:100px;">
+                  <div style="font-size:0;">
+            <!--[if mso]>
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation"align="center"><tr><td align="center" valign="top" width="38%">
+            <![endif]-->
+            <div style="display:inline-block; vertical-align:top; width:38%; min-width:140px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(38%); width:calc(230400px - 48000%); min-width:calc(38%);">
+            <!-- left -->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+             <tr>
+              
+              <td valign="top" style="color:#505050; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:36px; line-height:40px; padding-bottom:32px; vertical-align:top;"><img class="mobile-icon" align="left"
+                alt="Take scanning into your own&nbsp;hands"
+                 src="https://landing.adobe.com/dam/global/images/icon-scan.000000.130x130.png" 
+        srcset="https://landing.adobe.com/dam/global/images/icon-scan.000000.96x96.png 621w, https://landing.adobe.com/dam/global/images/icon-scan.000000.130x130.png 1200w"
+        sizes="(max-width: 480px) 50vw"
+        width="65" height="auto"
+        border="0" hspace="0" vspace="0" style="color:#2A2A2A; font-family:adobe-clean, Arial, Helvetica, sans-serif; font-size:20px; line-height:24px; display:inline-block; vertical-align:top; align:left;"/></td>
+              
+             </tr>
+            </table>
+            <!-- END left -->
+            </div>
+            <!--[if mso]></td><td align="center" valign="top" width="50%">
+            <![endif]-->
+            <div style="display:inline-block; vertical-align:top; width:50%; min-width:284px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(50%); width:calc(230400px - 48000%); min-width:calc(50%);">
+            <!-- right -->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+             <tr>
+              
+              <td style="color:#000000; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:22px; line-height:29px; padding-bottom:6px;"><strong>Take scanning into your own&nbsp;hands.</strong></td>
+              
+             </tr>
+             <tr>
+              
+              <td style="color:#505050; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:16px; line-height:24px;">Create, save, and organise any paper 
+documents as a digital file with your 
+smartphone or&nbsp;tablet. <a href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc760&e=cDE9VDMyUExTRkw&s=7T2WGikuLg9I6N4OvPYiLyU55-jbS4LTdrkvb_wjr5U" target="_blank" style="color:#1473e6; white-space: nowrap;">Get&nbsp;started</a></td>
+              
+             </tr>
+            </table>
+            <!-- END right -->
+            </div>
+          <!--[if mso]>
+          </td></tr></table>
+          <![endif]-->
+          </div>
+                </td>
+             </tr>
+       <!-- end FEATURE 1 -->  
+    
+       <!-- FEATURE 3 -->
+       <tr>
+              <td align="center" valign="top" style="margin:0 auto; vertical-align:top; padding-top:100px;">
+                  <div style="font-size:0;">
+            <!--[if mso]>
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation"align="center"><tr><td align="center" valign="top" width="38%">
+            <![endif]-->
+            <div style="display:inline-block; vertical-align:top; width:38%; min-width:140px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(38%); width:calc(230400px - 48000%); min-width:calc(38%);">
+            <!-- left -->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+             <tr>
+              
+              <td valign="top" style="color:#505050; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:36px; line-height:40px; padding-bottom:32px; vertical-align:top;"><img class="mobile-icon" align="left"
+                alt="Easy peasy PDFs"
+                 src="https://landing.adobe.com/dam/global/images/pencil-icon.black.130x130.png" 
+        srcset="https://landing.adobe.com/dam/global/images/pencil-icon.black.96x96.png 621w, https://landing.adobe.com/dam/global/images/pencil-icon.black.130x130.png 1200w"
+        sizes="(max-width: 480px) 50vw"
+        width="65" height="auto"
+        border="0" hspace="0" vspace="0" style="color:#2A2A2A; font-family:adobe-clean, Arial, Helvetica, sans-serif; font-size:20px; line-height:24px; display:inline-block; vertical-align:top; align:left;"/></td>
+              
+             </tr>
+            </table>
+            <!-- END left -->
+            </div>
+            <!--[if mso]></td><td align="center" valign="top" width="50%">
+            <![endif]-->
+            <div style="display:inline-block; vertical-align:top; width:50%; min-width:284px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(50%); width:calc(230400px - 48000%); min-width:calc(50%);">
+            <!-- right -->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+             <tr>
+              
+              <td style="color:#000000; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:22px; line-height:29px; padding-bottom:6px;"><strong>Easy peasy PDFs.</strong></td>
+              
+             </tr>
+             <tr>
+              
+              <td style="color:#505050; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:16px; line-height:24px;">Edit a PDF instantly. Change text and 
+images in PDFs online and on&nbsp;time. <a href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc761&e=cDE9VDMyUExTRkw&s=CTGENlVVLT9e__rnLQjcsOMIqcChWJxYQ--pDVmWn2Q" target="_blank" style="color:#1473e6; white-space: nowrap;">Get&nbsp;started</a></td>
+              
+             </tr>
+            </table>
+            <!-- END right -->
+            </div>
+          <!--[if mso]>
+          </td></tr></table>
+          <![endif]-->
+          </div>
+                </td>
+             </tr>
+       <!-- end FEATURE 3 -->
+      
+            </table>
+            <!-- END 2 columns -->   
+            <!-- CTA-1 -->
+            <table class="column-width" align="center" width="480" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:480px;">
+             <tr>
+              <td style="color:#1473E6; font-family:adobe-clean, Arial, Helvetica, sans-serif; font-size:15px; line-height:20px; padding-top:80px; padding-bottom:100px;"><div><!--[if mso]>
+          <table class="full-width" align="left" width="180" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:180px;">
+          <tr>
+          <td height="40" valign="middle" style="background-color:#1473E6; font-family: adobe-clean, Arial, Helvetica, sans-serif; height:40px;">
+          <center>
+          <![endif]-->
+          <a class="button" href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc762&e=cDE9VDMyUExTRkw&s=TnE1JOT6ZUsTj3Y_CtBU1vd295QuDDs3qqhVs3o1OSE" target="_blank" style="background-color:#1473E6;border-radius:20px;color:#ffffff;display:inline-block;font-size:16px;line-height:40px;text-align:center;text-decoration:none;width:180px;-webkit-text-size-adjust:none;"><strong>Get started</strong></a>
+          <!--[if mso]>
+          </center>
+          </td>
+          </tr>
+          </table>
+        <![endif]--></div>
+        </td>
+             </tr>
+            </table>
+            <!-- END CTA-1 -->
+           <!-- END email content -->
+           </td>
+        </tr>
+    <tr>
+    <td bgcolor="#F5F5F5" style="background-color:#F5F5F5;">
+      <!-- banner -->
+            <table class="full-width" align="center" width="600" border="0" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#FA0F00" style="background-color:#FA0F00; width:600px;">
+       <tr>
+        <td class="web" width="20" style="width:20px;">&nbsp;</td>
+        <td width="30" style="width:30px;">&nbsp;</td>
+              <td style="color:#ffffff; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:15px; line-height:20px; padding-top:5px; padding-bottom:5px;"><strong>Business moves with Adobe.</strong></td>
+        <td width="30" style="width:30px;">&nbsp;</td>
+        <td class="web" width="20" style="width:20px;">&nbsp;</td>
+             </tr>
+            </table>
+      <!-- END banner -->  
+     
+      <!-- logo & social -->
+      <table class="email-width" align="center" width="500" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:500px;">
+     <tr>
+      <td valign="middle" style="padding-top:50px;">
+        <div style="font-size:0;">
+          <!--[if mso]>
+          <table class="email-width" align="center" width="500" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:500px;"><tr><td align="left" valign="middle" width="50%">
+          <![endif]-->
+          <div style="display:inline-block; vertical-align:middle; width:50%; min-width:250px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(50%); width:calc(230400px - 48000%); min-width:calc(50%);">
+          <!-- left -->
+          <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+           <tr>
+            <td style="color:#EB1000; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:12px; line-height:18px;"><img alt="Adobe" src="https://landing.adobe.com/dam/global/images/adobe-logo.classic.160x222.png" width="30" height="auto" border="0" hspace="0" vspace="0" style="color:#EB1000; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:12px; line-height:18px; display:block; vertical-align:top;"/></td>
+           </tr>
+          </table>
+          <!-- END left -->
+          </div>
+          <!--[if mso]>
+          </td><td align="right" valign="middle" width="50%">
+          <![endif]-->
+          <div style="display:inline-block; vertical-align:middle; width:50%; min-width:250px; max-width:100%; width:-webkit-calc(230400px - 48000%); min-width:-webkit-calc(50%); width:calc(230400px - 48000%); min-width:calc(50%);">
+          <!-- right -->
+          <table class="social" align="right" width="auto" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:right;">
+           <tr>
+            <td style="color:#959595; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:12px; line-height:12px;"><a href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc763" alias="Facebook" target="_blank"><img class="social" alt="Facebook" src="https://landing.adobe.com/dam/global/images/social/facebook.959595.png" width="9" height="17" border="0" hspace="0" vspace="0" style="display:block; vertical-align:top;"/></a></td>
+            <td width="30" style="width:30px;">&nbsp;</td>
+            <td style="color:#959595; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:12px; line-height:12px;"><a href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc764" alias="LinkedIn" target="_blank"><img class="social" alt="LinkedIn" src="https://landing.adobe.com/dam/global/images/social/linkedin.959595.png" width="17" height="17" border="0" hspace="0" vspace="0" style="display:block; vertical-align:top;"/></a></td>
+            <td width="30" style="width:30px;">&nbsp;</td>
+            <td style="color:#959595; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:12px; line-height:12px;"><a href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc73f" alias="Twitter" target="_blank"><img class="social" alt="Twitter" src="https://landing.adobe.com/dam/global/images/social/twitter.959595.png" width="21" height="17" border="0" hspace="0" vspace="0" style="display:block; vertical-align:top;"/></a></td>
+           </tr>
+          </table>
+          <!-- END right -->
+          </div>
+        <!--[if mso]>
+        </td></tr></table>
+        <![endif]-->
+        </div>
+      </td>
+       </tr>
+      </table>      
+      <!-- END logo & social -->    
+      
+      <!-- legal-->
+      <table class="email-width" align="center" width="500" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:500px;">
+<tr>
+<td class="legal" style="color:#959595; font-family:adobe-clean, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:11px; line-height:18px; padding-top:50px; padding-bottom:100px;">   
+Adobe, the Adobe logo, Creative Cloud, and the Creative Cloud logo are either registered trademarks or trademarks of Adobe in the United States and/or other countries.<br/><br/>  This is not a comprehensive list of Adobe trademarks. All other trademarks are the property of their respective owners. <a href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc740" alias="FOOTER - Trademark Guidelines" target="_blank" style="color:#959595;">Adobe Trademark Guidelines</a>. <br/><br/>
+&copy; 2022 Adobe Inc. All&nbsp;rights&nbsp;reserved.<br/><br/>
+This is a marketing email from Adobe Systems Software Ireland Limited, 4-6 Riverwalk, Citywest Business Park, Dublin 24, Ireland.  <a style="TEXT-DECORATION: underline; COLOR: #a1a1a1" href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc75a&e=cDE9JTQwWlVEUEJtZUg0eEVYRXpFUzY5ZnU4VmJqUkdOT3RQQVZQMWdQMGhBNDc2V1laOU4yenBPTjRZM1BsZHQ4WjB2aSZwMj0mbG9jPWluJnAzPTM1&s=5ezSIzS7YQ4R8fPW-fUPOQqmAIXRYbrLLGz20Vb0tPU" target="_blank" class="opt_out" alias="Unsubscribe" _type="optout" _label="Opt-out link">Click&nbsp;here</A>  to unsubscribe, or send an unsubscribe request to the address above.<br/><br/>
+Your privacy is important to us. Please review Adobe's Privacy Policy by clicking here:<br/>
+<a href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc742" alias="FOOTER - Privacy Policy" target="_blank" style="color:#959595; text-decoration:underline;">www.adobe.com/in/privacy.html</a>.<br/><br/>
+PLEASE DO NOT REPLY TO THIS MESSAGE. To obtain information on how to contact Adobe, visit the web at <a href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc743" target="_blank" style="color:#959595; text-decoration:underline;" alias="FOOTER - Contact Adobe">helpx.adobe.com/in/support.html</a>. If you have a privacy-related complaint, send it to <a href="mailto:privacy@adobe.com" style="color:#959595;text-decoration:underline;">privacy@adobe.com</a>.<br/>
+<div style="margin-bottom:12px; margin-top:10px;color:#959595;">This email has been sent to <a href="mailto:relaxationmusicstressfree@gmail.com" style="color:#959595;text-decoration:underline;">relaxationmusicstressfree@gmail.com</a>
+<br>
+<br>
+<span class="web">
+
+<a href="https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,bdcbc76b&e=cDE9JTQwTWtCbjk1b2dzY3YlMkZ6T29pdmZJem03eEJZYm92VkQ3eGdNMmptdUFySFU0JTNE&s=xfkpMOeaBANnchHb8WFtItCiuxHn6hg4ZhlP5yVdHsg" _label="Mirror Page" _type="mirrorPage" alias="Read online" target="_blank" style="color:#999999; text-decoration: underline;">Read&nbsp;online</a>
+</td>
+</tr>
+</table>
+      <!-- END legal-->
+      
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+  
+  <img height='0' width='0' alt='' src='https://t-info.mail.adobe.com/r/?id=he5257a87,f8051325,1'/><img height='0' width='0' alt='' src='https://adobe.demdex.net/event?c_syncplacement=email&d_cid=813%01586803e161d99cc10a495e62'/></BODY>
+</HTML>
+
+
+--=-27KK4vbJVzhpfKeqkOyjPQ==
+Content-Type: text/html
+Content-Transfer-Encoding: base64
+Content-Id: <2927a612-2fa4-4356-a958-717cc275066f>
+
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPg0KPC9IRUFEPg0KPEJPRFk+DQoNCg0KDQoNCjxodG1sIHhtbG5z
+PSJodHRwczovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWlj
+cm9zb2Z0LWNvbTp2bWwiIHhtbG5zOm89InVybjpzY2hlbWFzLW1pY3Jvc29mdC1jb206b2ZmaWNl
+Om9mZmljZSI+DQo8aGVhZD4NCjxsaW5rIHJlbD0iaWNvbiIgaHJlZj0iaHR0cHM6Ly93d3cuYWRv
+YmUuY29tL2Zhdmljb24uaWNvIiB0eXBlPSJpbWFnZS94LWljb24iPg0KPGxpbmsgcmVsPSJzaG9y
+dGN1dCBpY29uIiBocmVmPSJodHRwczovL3d3dy5hZG9iZS5jb20vZmF2aWNvbi5pY28iIHR5cGU9
+ImltYWdlL3gtaWNvbiI+DQo8bWV0YSBuYW1lPSJ4LWFwcGxlLWRpc2FibGUtbWVzc2FnZS1yZWZv
+cm1hdHRpbmciPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPg0KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9Indp
+ZHRoPWRldmljZS13aWR0aCxpbml0aWFsLXNjYWxlPTEuMCI+DQo8bWV0YSBuYW1lPSJmb3JtYXQt
+ZGV0ZWN0aW9uIiBjb250ZW50PSJ0ZWxlcGhvbmU9bm8iPg0KPG1ldGEgbmFtZT0iZm9ybWF0LWRl
+dGVjdGlvbiIgY29udGVudD0iZGF0ZT1ubyI+DQo8bWV0YSBuYW1lPSJmb3JtYXQtZGV0ZWN0aW9u
+IiBjb250ZW50PSJhZGRyZXNzPW5vIj4NCjxtZXRhIG5hbWU9ImZvcm1hdC1kZXRlY3Rpb24iIGNv
+bnRlbnQ9ImVtYWlsPW5vIj4NCjx0aXRsZT5Hb29kYnllLCBkaXNvcmdhbml6ZWQgbGlmZTwvdGl0
+bGU+DQoNCjwhLS1baWYgbXNvXT4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQpib2R5LCB0YWJs
+ZSwgdGQgew0KZm9udC1mYW1pbHk6IGFkb2JlLWNsZWFuLEhlbHZldGljYSBOZXVlLCBIZWx2ZXRp
+Y2EsIFZlcmRhbmEsIEFyaWFsLCBzYW5zLXNlcmlmICFpbXBvcnRhbnQ7DQp9DQo8L3N0eWxlPg0K
+PHhtbD4NCiAgPG86T2ZmaWNlRG9jdW1lbnRTZXR0aW5ncz4NCiAgICA8bzpBbGxvd1BORy8+DQog
+ICAgPG86UGl4ZWxzUGVySW5jaD45NjwvbzpQaXhlbHNQZXJJbmNoPg0KICA8L286T2ZmaWNlRG9j
+dW1lbnRTZXR0aW5ncz4NCjwveG1sPg0KPCFbZW5kaWZdLS0+DQoNCjxzdHlsZSB0eXBlPSJ0ZXh0
+L2NzcyI+DQpAaW1wb3J0IHVybCgiaHR0cHM6Ly91c2UudHlwZWtpdC5uZXQvb25yOHRici5jc3Mi
+KTsNCi5SZWFkTXNnQm9keSB7IHdpZHRoOjEwMCU7fQ0KLkV4dGVybmFsQ2xhc3Mge3dpZHRoOjEw
+MCU7fQ0KdGFibGUge2JvcmRlci1jb2xsYXBzZTpjb2xsYXBzZTsgbWFyZ2luOjAgYXV0bzt9DQph
+LCBhOnZpc2l0ZWQge2NvbG9yOiMxNDczRTY7IHRleHQtZGVjb3JhdGlvbjpub25lO30NCi5sZWdh
+bCBhIHt0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lO30NCi8qIGlPUyBCTFVFIExJTktTICovDQph
+W3gtYXBwbGUtZGF0YS1kZXRlY3RvcnNdIHtjb2xvcjppbmhlcml0ICFpbXBvcnRhbnQ7IHRleHQt
+ZGVjb3JhdGlvbjpub25lICFpbXBvcnRhbnQ7IGZvbnQtc2l6ZTppbmhlcml0ICFpbXBvcnRhbnQ7
+IGZvbnQtZmFtaWx5OmluaGVyaXQgIWltcG9ydGFudDsgZm9udC13ZWlnaHQ6aW5oZXJpdCAhaW1w
+b3J0YW50OyBsaW5lLWhlaWdodDppbmhlcml0ICFpbXBvcnRhbnQ7fQ0KDQoubW9iaWxlIHtib3Jk
+ZXItc3BhY2luZzowO2Rpc3BsYXk6bm9uZSFpbXBvcnRhbnQ7aGVpZ2h0OjA7bWF4LWhlaWdodDow
+O21zby1oaWRlOmFsbDtvdmVyZmxvdzpoaWRkZW47dmlzaWJpbGl0eTpoaWRkZW47d2lkdGg6MDt9
+DQogIA0KICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NDgwcHgpIHsNCiAgICB1
+IH4gZGl2IHsNCiAgICAgIG1pbi13aWR0aDoxMDB2dzsNCiAgICB9DQogICAgZGl2ID4gdSB+IGRp
+diB7DQogICAgICAgICAgbWluLXdpZHRoOiAxMDAlOw0KICAgIH0NCiAgICAud2ViIHsNCiAgICAg
+ICBkaXNwbGF5Om5vbmUgIWltcG9ydGFudDsNCiAgICAgICB9DQogICAgIA0KICAgICAubW9iaWxl
+IHsNCiAgICAgICBkaXNwbGF5OmJsb2NrICFpbXBvcnRhbnQ7DQogICAgICAgd2lkdGg6YXV0byAh
+aW1wb3J0YW50Ow0KICAgICAgIG92ZXJmbG93OnZpc2libGUgIWltcG9ydGFudDsNCiAgICAgICBo
+ZWlnaHQ6YXV0byAhaW1wb3J0YW50Ow0KICAgICAgIG1heC1oZWlnaHQ6aW5oZXJpdCAhaW1wb3J0
+YW50Ow0KICAgICAgIGZvbnQtc2l6ZToxNXB4ICFpbXBvcnRhbnQ7DQogICAgICAgbGluZS1oZWln
+aHQ6MjFweCAhaW1wb3J0YW50Ow0KICAgICAgIHZpc2liaWxpdHk6dmlzaWJsZSAhaW1wb3J0YW50
+Ow0KICAgICAgIH0NCiAgICAgDQogICAgIC5lbWFpbC13aWR0aCB7DQogICAgICAgd2lkdGg6ODQl
+ICFpbXBvcnRhbnQ7DQogICAgICAgfQ0KICAgICAuY29sdW1uLXdpZHRoIHsNCiAgICAgICB3aWR0
+aDo3NCUgIWltcG9ydGFudDsNCiAgICAgICB9DQogICAgIC5mdWxsLXdpZHRoIHsNCiAgICAgICB3
+aWR0aDoxMDAlICFpbXBvcnRhbnQ7DQogICAgICAgfQ0KICAgICANCiAgICAgLm1vYmlsZS1pbWFn
+ZSB7DQogICAgICAgaGVpZ2h0OmF1dG8gIWltcG9ydGFudDsNCiAgICAgICB3aWR0aDoxMDAlICFp
+bXBvcnRhbnQ7DQogICAgICAgfQ0KICAgIC5tb2JpbGUtaWNvbiB7DQogICAgICAgaGVpZ2h0OmF1
+dG8gIWltcG9ydGFudDsNCiAgICAgICB3aWR0aDo0OHB4ICFpbXBvcnRhbnQ7DQogICAgICAgfQ0K
+ICAgIC5zb2NpYWwgew0KICAgICAgZmxvYXQ6bGVmdCAhaW1wb3J0YW50Ow0KICAgICAgcGFkZGlu
+Zy10b3A6NjZweCAhaW1wb3J0YW50Ow0KICAgICAgdGV4dC1hbGlnbjpsZWZ0ICFpbXBvcnRhbnQ7
+DQogICAgfQ0KICAgIA0KICAgIC5oZWFkZXIgew0KICAgICAgZm9udC1zaXplOjQ2cHggIWltcG9y
+dGFudDsNCiAgICAgIGxpbmUtaGVpZ2h0OjUwcHggIWltcG9ydGFudDsNCiAgICB9DQogICAgLm1v
+YmlsZS1pY29uIHsgICAgICAgaGVpZ2h0OmF1dG8gIWltcG9ydGFudDsNCiAgICAgICB3aWR0aDo0
+OHB4ICFpbXBvcnRhbnQ7DQp9DQogIH0NCg0KDQo8L3N0eWxlPg0KPC9oZWFkPg0KDQo8Ym9keSBi
+Z2NvbG9yPSIjRTRFNEU0IiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojRTRFNEU0OyBtYXJnaW46
+MDsgcGFkZGluZzowOy13ZWJraXQtZm9udC1zbW9vdGhpbmc6YW50aWFsaWFzZWQ7d2lkdGg6MTAw
+JSAhaW1wb3J0YW50Oy13ZWJraXQtdGV4dC1zaXplLWFkanVzdDpub25lOyIgdG9wbWFyZ2luPSIw
+Ij48ZGl2IHN0eWxlPSJmb250LXNpemU6MXB4OyBjb2xvcjojRTRFNEU0OyBkaXNwbGF5Om5vbmU7
+IG92ZXJmbG93OmhpZGRlbjsgdmlzaWJpbGl0eTpoaWRkZW47Ij5TYXkgaGVsbG8gdG8gYW4gZWZm
+aWNpZW50LCBwcm9kdWN0aXZlIGZ1dHVyZSB3aXRoIHRoZSBBY3JvYmF0IFJlYWRlciBtb2JpbGUg
+YXBwLjwvZGl2Pg0KDQo8dGFibGUgd2lkdGg9IjEwMCUiIGJnY29sb3I9IiNFNEU0RTQiIHN0eWxl
+PSJiYWNrZ3JvdW5kLWNvbG9yOiNFNEU0RTQ7IiBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBj
+ZWxsc3BhY2luZz0iMCIgcm9sZT0icHJlc2VudGF0aW9uIj4NCiAgPHRyPg0KICAgIDx0ZD4NCiAg
+ICAgIDx0YWJsZSBjbGFzcz0iZnVsbC13aWR0aCIgYWxpZ249ImNlbnRlciIgd2lkdGg9IjYwMCIg
+Ym9yZGVyPSIwIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiIHJvbGU9InByZXNlbnRh
+dGlvbiIgc3R5bGU9IndpZHRoOjYwMHB4OyI+DQogICAgPHRyPg0KICAgICAgICAgICA8dGQgYmdj
+b2xvcj0iI2ZmZmZmZiIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6I2ZmZmZmZjsiPg0KICAgICAg
+ICAgICANCiAgICAgICAgICAgIDwhLS0gcG9kMSAtLT4NCiAgICAgICAgICAgIDx0YWJsZSBjbGFz
+cz0iZW1haWwtd2lkdGgiIGFsaWduPSJjZW50ZXIiIHdpZHRoPSI1MDAiIGJvcmRlcj0iMCIgY2Vs
+bHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiByb2xlPSJwcmVzZW50YXRpb24iIHN0eWxlPSJ3
+aWR0aDo1MDBweDsiPg0KICAgICAgIDx0cj4NCiAgICAgICAgICAgICAgPHRkIHN0eWxlPSJjb2xv
+cjojMkMyQzJDOyBmb250LWZhbWlseTphZG9iZS1jbGVhbiwgSGVsdmV0aWNhIE5ldWUsIEhlbHZl
+dGljYSwgVmVyZGFuYSwgQXJpYWwsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxOHB4OyBsaW5lLWhl
+aWdodDoyNnB4OyBwYWRkaW5nLXRvcDo0OHB4OyI+DQogICAgICAgICAgPHRhYmxlIGFsaWduPSJs
+ZWZ0IiB3aWR0aD0iYXV0byIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9
+IjAiIHJvbGU9InByZXNlbnRhdGlvbiI+DQogICAgICAgICAgICA8dHI+DQogICAgICAgICAgICA8
+dGQgdmFsaWduPSJtaWRkbGUiIHN0eWxlPSJjb2xvcjojMDAwMDAwOyBmb250LWZhbWlseTphZG9i
+ZS1jbGVhbiwgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZjsgZm9udC1zaXplOjE0cHg7IGxp
+bmUtaGVpZ2h0OjIwcHg7Ij48aW1nIGFsdD0iIiBzcmM9Imh0dHBzOi8vbGFuZGluZy5hZG9iZS5j
+b20vZGFtL2dsb2JhbC9pbWFnZXMvYWNyb2JhdC1wcm8tZGMubW5lbW9uaWMuNDgweDQ2OC5wbmci
+IHdpZHRoPSIzMCIgaGVpZ2h0PSJhdXRvIiBib3JkZXI9IjAiIGhzcGFjZT0iMCIgdnNwYWNlPSIw
+IiBzdHlsZT0iZGlzcGxheTpibG9jazsgdmVydGljYWwtYWxpZ246dG9wOyIvPjwvdGQ+DQogICAg
+ICAgICAgICA8dGQgd2lkdGg9IjEwIiBzdHlsZT0id2lkdGg6MTBweDsiPiZuYnNwOzwvdGQ+DQog
+ICAgICAgICAgICA8dGQgdmFsaWduPSJ0b3AiIHN0eWxlPSJjb2xvcjojNzQ3NzdhOyBmb250LWZh
+bWlseTphZG9iZS1jbGVhbiwgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZjsgZm9udC1zaXpl
+OjE0cHg7IGxpbmUtaGVpZ2h0OjIwcHg7Ij48aW1nIGFsdD0iQWRvYmUgQWNyb2JhdCBSZWFkZXIi
+IHNyYz0iaHR0cHM6Ly9zN2Q5LnNjZW5lNy5jb20vaXMvaW1hZ2UvQWRvYmVEZW1hbmRDcmVhdGl2
+ZS8/Zm10PXBuZy1hbHBoYSZzaXplPTQxMCw2MCZ3aWQ9NDEwJnRleHRBdHRyPTE0NCxzdHJvbmcm
+cmVzb2x1dGlvbj0yMDAmdGV4dFBzPSU3QiU1QyolNUNpc2NvbG9ydGJsJTNCNzQ3NzdhJTNCJTVD
+Zm9udHRibCU3QiU1Q2YwJTIwQWRvYmUlMjBDbGVhbiUyMEV4dHJhQm9sZCUzQiU3RCU3RCU1Q2Yw
+JTVDZnM0MCU1Q3NsLTQwMCU1Q3ZlcnRhbGMlNUNrZXJuaW5nb3B0aWNhbCU1Q2NmMUFkb2JlJTIw
+QWNyb2JhdCUyMFJlYWRlciIgd2lkdGg9IjIwNSIgaGVpZ2h0PSIzMCIgYm9yZGVyPSIwIiBoc3Bh
+Y2U9IjAiIHZzcGFjZT0iMCIgc3R5bGU9ImNvbG9yOiM3NDc3N2E7IGZvbnQtZmFtaWx5OmFkb2Jl
+LWNsZWFuLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmOyBmb250LXNpemU6MTRweDsgbGlu
+ZS1oZWlnaHQ6MjBweDsgZGlzcGxheTpibG9jazsgdmVydGljYWwtYWxpZ246dG9wOyIvPjwvdGQ+
+DQogICAgICAgICAgICA8L3RyPg0KICAgICAgICAgIDwvdGFibGU+DQogICAgICAgIDwvdGQ+DQog
+ICAgICAgICAgICAgPC90cj4NCiAgICAgICA8dHI+DQogICAgICAgICAgICAgIDx0ZCBjbGFzcz0i
+aGVhZGVyIiBzdHlsZT0iY29sb3I6IzAwMDAwMDsgZm9udC1mYW1pbHk6YWRvYmUtY2xlYW4sIEhl
+bHZldGljYSBOZXVlLCBIZWx2ZXRpY2EsIFZlcmRhbmEsIEFyaWFsLCBzYW5zLXNlcmlmOyBmb250
+LXNpemU6NjBweDsgbGluZS1oZWlnaHQ6NjZweDsgcGFkZGluZy10b3A6NzJweDsiPjxzdHJvbmc+
+TGV0JiM4MjE3O3Mgb3JnYW5pc2UgPGJyLz50b2dldGhlci48L3N0cm9uZz48L3RkPg0KICAgICAg
+ICAgICAgIDwvdHI+DQogICAgICAgICAgIDx0cj48dGQ+DQogICAgICAgICAgICAgICA8dGFibGUg
+Y2xhc3M9ImZ1bGwtd2lkdGgiIGFsaWduPSJsZWZ0IiB3aWR0aD0iNDY0IiBib3JkZXI9IjAiIGNl
+bGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgcm9sZT0icHJlc2VudGF0aW9uIiBzdHlsZT0i
+d2lkdGg6NDY0cHg7Ij4NCiAgICAgICAgICAgIA0KICAgICAgICAgICAgICA8dHI+DQogICAgICAg
+ICAgICAgIDx0ZCBzdHlsZT0iY29sb3I6IzAwMDAwMDsgZm9udC1mYW1pbHk6YWRvYmUtY2xlYW4s
+IEhlbHZldGljYSBOZXVlLCBIZWx2ZXRpY2EsIFZlcmRhbmEsIEFyaWFsLCBzYW5zLXNlcmlmOyBm
+b250LXNpemU6MThweDsgbGluZS1oZWlnaHQ6MjZweDsgcGFkZGluZy10b3A6MzBweDsiPlByZXBh
+cmUgZm9yIHdoYXRldmVyIGxpZmUgYnJpbmdzIHlvdS4gU3RheSBjb25uZWN0ZWQgYW5kIG9yZ2Fu
+aXNlZCBvbiBhbnkgZGV2aWNlIHdpdGggdGhlIEFjcm9iYXQmbmJzcDtSZWFkZXIgbW9iaWxlJm5i
+c3A7YXBwLjwvdGQ+PC90cj48L3RhYmxlPg0KICAgICAgICAgICAgICAgPC90ZD4NCiAgICAgICAg
+ICAgICAgDQogICAgICAgICAgICAgPC90cj4NCiAgICAgICAgICAgICA8dHI+DQogICAgICAgICAg
+ICAgIDx0ZCBzdHlsZT0iY29sb3I6IzE0NzNFNjsgZm9udC1mYW1pbHk6YWRvYmUtY2xlYW4sIEFy
+aWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNXB4OyBsaW5lLWhlaWdodDoy
+MHB4OyBwYWRkaW5nLXRvcDo0MHB4OyBwYWRkaW5nLWJvdHRvbToxMDBweDsiPjxkaXY+PCEtLVtp
+ZiBtc29dPg0KICAgICAgICAgIDx0YWJsZSBjbGFzcz0iZnVsbC13aWR0aCIgYWxpZ249ImxlZnQi
+IHdpZHRoPSIxODAiIGJvcmRlcj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiBy
+b2xlPSJwcmVzZW50YXRpb24iIHN0eWxlPSJ3aWR0aDoxODBweDsiPg0KICAgICAgICAgIDx0cj4N
+CiAgICAgICAgICA8dGQgaGVpZ2h0PSI0MCIgdmFsaWduPSJtaWRkbGUiIHN0eWxlPSJiYWNrZ3Jv
+dW5kLWNvbG9yOiMxNDczRTY7IGZvbnQtZmFtaWx5OiBhZG9iZS1jbGVhbiwgQXJpYWwsIEhlbHZl
+dGljYSwgc2Fucy1zZXJpZjsgaGVpZ2h0OjQwcHg7Ij4NCiAgICAgICAgICA8Y2VudGVyPg0KICAg
+ICAgICAgIDwhW2VuZGlmXS0tPg0KICAgICAgICAgIDxhIGNsYXNzPSJidXR0b24iIGhyZWY9Imh0
+dHBzOi8vdC1pbmZvLm1haWwuYWRvYmUuY29tL3IvP2lkPWhlNTI1N2E4NyxmODA1MTMyNSxiZGNi
+Yzc1ZSZlPWNERTlWRE15VUV4VFJrdyZzPVo5T3ItS3BnLTREYVh4Z0t4cVNnOElqdi02QUNwY3hV
+T2F2aDdwSlJvZUkiIHRhcmdldD0iX2JsYW5rIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojMTQ3
+M0U2O2JvcmRlci1yYWRpdXM6MjBweDtjb2xvcjojZmZmZmZmO2Rpc3BsYXk6aW5saW5lLWJsb2Nr
+O2ZvbnQtc2l6ZToxNnB4O2xpbmUtaGVpZ2h0OjQwcHg7dGV4dC1hbGlnbjpjZW50ZXI7dGV4dC1k
+ZWNvcmF0aW9uOm5vbmU7d2lkdGg6MTgwcHg7LXdlYmtpdC10ZXh0LXNpemUtYWRqdXN0Om5vbmU7
+Ij48c3Ryb25nPkdldCBzdGFydGVkPC9zdHJvbmc+PC9hPg0KICAgICAgICAgIDwhLS1baWYgbXNv
+XT4NCiAgICAgICAgICA8L2NlbnRlcj4NCiAgICAgICAgICA8L3RkPg0KICAgICAgICAgIDwvdHI+
+DQogICAgICAgICAgPC90YWJsZT4NCiAgICAgICAgPCFbZW5kaWZdLS0+PC9kaXY+DQogICAgICAg
+IDwvdGQ+DQogICAgICAgICAgICAgPC90cj4NCiAgICAgICAgICAgICANCiAgICAgICAgICAgIDwv
+dGFibGU+DQogICAgICAgICAgICA8IS0tIEVORCBwb2QxIC0tPg0KICAgICAgPC90ZD48L3RyPg0K
+ICAgICAgPHRyPg0KICAgICAgICAgICA8dGQgYmdjb2xvcj0iI2ZmZmZmZiIgc3R5bGU9ImJhY2tn
+cm91bmQtY29sb3I6I2ZmZmZmZjsiPg0KICAgICAgIDwhLS0gcG9kMSBtYXJxdWVlIC0tPg0KICAg
+ICAgICAgICAgPHRhYmxlIGNsYXNzPSJmdWxsLXdpZHRoIiBhbGlnbj0iY2VudGVyIiB3aWR0aD0i
+NjAwIiBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgcm9sZT0icHJl
+c2VudGF0aW9uIiBzdHlsZT0id2lkdGg6NjAwcHg7Ij4NCiAgICAgICAgICAgIA0KICAgICAgICAg
+ICAgICA8dHI+DQogICAgICAgICAgICAgIDx0ZCBzdHlsZT0iY29sb3I6IzAwMDAwMDsgZm9udC1m
+YW1pbHk6YWRvYmUtY2xlYW4sIEhlbHZldGljYSBOZXVlLCBIZWx2ZXRpY2EsIFZlcmRhbmEsIEFy
+aWFsLCBzYW5zLXNlcmlmOyBmb250LXNpemU6MjJweDsgbGluZS1oZWlnaHQ6MjhweDsiPjxhIGhy
+ZWY9Imh0dHBzOi8vdC1pbmZvLm1haWwuYWRvYmUuY29tL3IvP2lkPWhlNTI1N2E4NyxmODA1MTMy
+NSxiZGNiYzc1ZiZlPWNERTlWRE15VUV4VFJrdyZzPUZ6azZEV3JnbUJLc1IwUjJ6dDZSNTBmWS1m
+UlhQdURYMm5zMzdCMDdhbGsiIHRhcmdldD0iX2JsYW5rIiBzdHlsZT0iY29sb3I6IzE0NzNFNjsi
+PjxpbWcgY2xhc3M9Im1vYmlsZS1pbWFnZSIgDQogICAgICAgICAgICAgICAgYWx0PSJMZXQncyBv
+cmdhbmlzZSB0b2dldGhlci4iDQogICAgICAgICAgICAgICAgIHNyYz0iaHR0cHM6Ly9sYW5kaW5n
+LmFkb2JlLmNvbS9jb250ZW50L2RhbS9sYW5kaW5nL3VwbG9hZHMvMjAyMC9hcGFjL0RTQ0Y5Njg5
+XzEyMDBfODAwLmpwZyINCiAgICAgICAgc3Jjc2V0PSJodHRwczovL2xhbmRpbmcuYWRvYmUuY29t
+L2NvbnRlbnQvZGFtL2xhbmRpbmcvdXBsb2Fkcy8yMDIwL2FwYWMvRFNDRjk2ODlfODAwXzUzMy5q
+cGcgNjIxdywNCiAgICAgICAgaHR0cHM6Ly9sYW5kaW5nLmFkb2JlLmNvbS9jb250ZW50L2RhbS9s
+YW5kaW5nL3VwbG9hZHMvMjAyMC9hcGFjL0RTQ0Y5Njg5XzEyMDBfODAwLmpwZyAxMjAwdyINCiAg
+ICAgICAgc2l6ZXM9IihtYXgtd2lkdGg6IDQ4MHB4KSA1MHZ3Ig0KICAgICAgICB3aWR0aD0iNjAw
+IiBoZWlnaHQ9ImF1dG8iIA0KICAgICAgICBib3JkZXI9IjAiIGhzcGFjZT0iMCIgdnNwYWNlPSIw
+IiBzdHlsZT0iY29sb3I6IzAwMDAwMDsgZm9udC1mYW1pbHk6YWRvYmUtY2xlYW4sIEhlbHZldGlj
+YSBOZXVlLCBIZWx2ZXRpY2EsIFZlcmRhbmEsIEFyaWFsLCBzYW5zLXNlcmlmOyBmb250LXNpemU6
+MjJweDsgbGluZS1oZWlnaHQ6MjhweDsgZGlzcGxheTpibG9jazsgdmVydGljYWwtYWxpZ246dG9w
+OyIvPg0KICAgICAgICA8L2E+PC90ZD4NCiAgICAgICAgICAgICA8L3RyPg0KICAgICAgICAgICAg
+PC90YWJsZT4NCiAgICAgICAgICAgIDwhLS0gRU5EIHBvZDEgbWFycXVlZSAtLT4gICAgDQogICAg
+ICAgICAgICANCiAgICAgIDwhLS0gMiBjb2x1bW5zIC0tPg0KICAgICAgPHRhYmxlIGNsYXNzPSJj
+b2x1bW4td2lkdGgiIGFsaWduPSJjZW50ZXIiIHdpZHRoPSI0ODAiIGJvcmRlcj0iMCIgY2VsbHBh
+ZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiByb2xlPSJwcmVzZW50YXRpb24iIHN0eWxlPSJ3aWR0
+aDo0ODBweDsiPg0KICAgICAgIDwhLS0gRkVBVFVSRSAxIC0tPg0KICAgICAgICAgICAgIDx0cj4N
+CiAgICAgICAgICAgICAgPHRkIGFsaWduPSJjZW50ZXIiIHZhbGlnbj0idG9wIiBzdHlsZT0ibWFy
+Z2luOjAgYXV0bzsgdmVydGljYWwtYWxpZ246dG9wOyBwYWRkaW5nLXRvcDoxMDBweDsiPg0KICAg
+ICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0iZm9udC1zaXplOjA7Ij4NCiAgICAgICAgICAgIDwh
+LS1baWYgbXNvXT4NCiAgICAgICAgICAgIDx0YWJsZSBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIw
+IiBjZWxsc3BhY2luZz0iMCIgcm9sZT0icHJlc2VudGF0aW9uImFsaWduPSJjZW50ZXIiPjx0cj48
+dGQgYWxpZ249ImNlbnRlciIgdmFsaWduPSJ0b3AiIHdpZHRoPSIzOCUiPg0KICAgICAgICAgICAg
+PCFbZW5kaWZdLS0+DQogICAgICAgICAgICA8ZGl2IHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9j
+azsgdmVydGljYWwtYWxpZ246dG9wOyB3aWR0aDozOCU7IG1pbi13aWR0aDoxNDBweDsgbWF4LXdp
+ZHRoOjEwMCU7IHdpZHRoOi13ZWJraXQtY2FsYygyMzA0MDBweCAtIDQ4MDAwJSk7IG1pbi13aWR0
+aDotd2Via2l0LWNhbGMoMzglKTsgd2lkdGg6Y2FsYygyMzA0MDBweCAtIDQ4MDAwJSk7IG1pbi13
+aWR0aDpjYWxjKDM4JSk7Ij4NCiAgICAgICAgICAgIDwhLS0gbGVmdCAtLT4NCiAgICAgICAgICAg
+IDx0YWJsZSBhbGlnbj0iY2VudGVyIiBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3Bh
+Y2luZz0iMCIgcm9sZT0icHJlc2VudGF0aW9uIiB3aWR0aD0iMTAwJSI+DQogICAgICAgICAgICAg
+PHRyPg0KICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgPHRkIHZhbGlnbj0idG9wIiBzdHls
+ZT0iY29sb3I6IzUwNTA1MDsgZm9udC1mYW1pbHk6YWRvYmUtY2xlYW4sIEhlbHZldGljYSBOZXVl
+LCBIZWx2ZXRpY2EsIFZlcmRhbmEsIEFyaWFsLCBzYW5zLXNlcmlmOyBmb250LXNpemU6MzZweDsg
+bGluZS1oZWlnaHQ6NDBweDsgcGFkZGluZy1ib3R0b206MzJweDsgdmVydGljYWwtYWxpZ246dG9w
+OyI+PGltZyBjbGFzcz0ibW9iaWxlLWljb24iIGFsaWduPSJsZWZ0Ig0KICAgICAgICAgICAgICAg
+IGFsdD0iVGFrZSBzY2FubmluZyBpbnRvIHlvdXIgb3duJm5ic3A7aGFuZHMiDQogICAgICAgICAg
+ICAgICAgIHNyYz0iaHR0cHM6Ly9sYW5kaW5nLmFkb2JlLmNvbS9kYW0vZ2xvYmFsL2ltYWdlcy9p
+Y29uLXNjYW4uMDAwMDAwLjEzMHgxMzAucG5nIiANCiAgICAgICAgc3Jjc2V0PSJodHRwczovL2xh
+bmRpbmcuYWRvYmUuY29tL2RhbS9nbG9iYWwvaW1hZ2VzL2ljb24tc2Nhbi4wMDAwMDAuOTZ4OTYu
+cG5nIDYyMXcsIGh0dHBzOi8vbGFuZGluZy5hZG9iZS5jb20vZGFtL2dsb2JhbC9pbWFnZXMvaWNv
+bi1zY2FuLjAwMDAwMC4xMzB4MTMwLnBuZyAxMjAwdyINCiAgICAgICAgc2l6ZXM9IihtYXgtd2lk
+dGg6IDQ4MHB4KSA1MHZ3Ig0KICAgICAgICB3aWR0aD0iNjUiIGhlaWdodD0iYXV0byINCiAgICAg
+ICAgYm9yZGVyPSIwIiBoc3BhY2U9IjAiIHZzcGFjZT0iMCIgc3R5bGU9ImNvbG9yOiMyQTJBMkE7
+IGZvbnQtZmFtaWx5OmFkb2JlLWNsZWFuLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmOyBm
+b250LXNpemU6MjBweDsgbGluZS1oZWlnaHQ6MjRweDsgZGlzcGxheTppbmxpbmUtYmxvY2s7IHZl
+cnRpY2FsLWFsaWduOnRvcDsgYWxpZ246bGVmdDsiLz48L3RkPg0KICAgICAgICAgICAgICANCiAg
+ICAgICAgICAgICA8L3RyPg0KICAgICAgICAgICAgPC90YWJsZT4NCiAgICAgICAgICAgIDwhLS0g
+RU5EIGxlZnQgLS0+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwhLS1baWYgbXNv
+XT48L3RkPjx0ZCBhbGlnbj0iY2VudGVyIiB2YWxpZ249InRvcCIgd2lkdGg9IjUwJSI+DQogICAg
+ICAgICAgICA8IVtlbmRpZl0tLT4NCiAgICAgICAgICAgIDxkaXYgc3R5bGU9ImRpc3BsYXk6aW5s
+aW5lLWJsb2NrOyB2ZXJ0aWNhbC1hbGlnbjp0b3A7IHdpZHRoOjUwJTsgbWluLXdpZHRoOjI4NHB4
+OyBtYXgtd2lkdGg6MTAwJTsgd2lkdGg6LXdlYmtpdC1jYWxjKDIzMDQwMHB4IC0gNDgwMDAlKTsg
+bWluLXdpZHRoOi13ZWJraXQtY2FsYyg1MCUpOyB3aWR0aDpjYWxjKDIzMDQwMHB4IC0gNDgwMDAl
+KTsgbWluLXdpZHRoOmNhbGMoNTAlKTsiPg0KICAgICAgICAgICAgPCEtLSByaWdodCAtLT4NCiAg
+ICAgICAgICAgIDx0YWJsZSBhbGlnbj0iY2VudGVyIiBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIw
+IiBjZWxsc3BhY2luZz0iMCIgcm9sZT0icHJlc2VudGF0aW9uIiB3aWR0aD0iMTAwJSI+DQogICAg
+ICAgICAgICAgPHRyPg0KICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgPHRkIHN0eWxlPSJj
+b2xvcjojMDAwMDAwOyBmb250LWZhbWlseTphZG9iZS1jbGVhbiwgSGVsdmV0aWNhIE5ldWUsIEhl
+bHZldGljYSwgVmVyZGFuYSwgQXJpYWwsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToyMnB4OyBsaW5l
+LWhlaWdodDoyOXB4OyBwYWRkaW5nLWJvdHRvbTo2cHg7Ij48c3Ryb25nPlRha2Ugc2Nhbm5pbmcg
+aW50byB5b3VyIG93biZuYnNwO2hhbmRzLjwvc3Ryb25nPjwvdGQ+DQogICAgICAgICAgICAgIA0K
+ICAgICAgICAgICAgIDwvdHI+DQogICAgICAgICAgICAgPHRyPg0KICAgICAgICAgICAgICANCiAg
+ICAgICAgICAgICAgPHRkIHN0eWxlPSJjb2xvcjojNTA1MDUwOyBmb250LWZhbWlseTphZG9iZS1j
+bGVhbiwgSGVsdmV0aWNhIE5ldWUsIEhlbHZldGljYSwgVmVyZGFuYSwgQXJpYWwsIHNhbnMtc2Vy
+aWY7IGZvbnQtc2l6ZToxNnB4OyBsaW5lLWhlaWdodDoyNHB4OyI+Q3JlYXRlLCBzYXZlLCBhbmQg
+b3JnYW5pc2UgYW55IHBhcGVyIA0KZG9jdW1lbnRzIGFzIGEgZGlnaXRhbCBmaWxlIHdpdGggeW91
+ciANCnNtYXJ0cGhvbmUgb3ImbmJzcDt0YWJsZXQuIDxhIGhyZWY9Imh0dHBzOi8vdC1pbmZvLm1h
+aWwuYWRvYmUuY29tL3IvP2lkPWhlNTI1N2E4NyxmODA1MTMyNSxiZGNiYzc2MCZlPWNERTlWRE15
+VUV4VFJrdyZzPTdUMldHaWt1TGc5STZONE92UFlpTHlVNTUtamJTNExUZHJrdmJfd2pyNVUiIHRh
+cmdldD0iX2JsYW5rIiBzdHlsZT0iY29sb3I6IzE0NzNlNjsgd2hpdGUtc3BhY2U6IG5vd3JhcDsi
+PkdldCZuYnNwO3N0YXJ0ZWQ8L2E+PC90ZD4NCiAgICAgICAgICAgICAgDQogICAgICAgICAgICAg
+PC90cj4NCiAgICAgICAgICAgIDwvdGFibGU+DQogICAgICAgICAgICA8IS0tIEVORCByaWdodCAt
+LT4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgIDwhLS1baWYgbXNvXT4NCiAgICAgICAg
+ICA8L3RkPjwvdHI+PC90YWJsZT4NCiAgICAgICAgICA8IVtlbmRpZl0tLT4NCiAgICAgICAgICA8
+L2Rpdj4NCiAgICAgICAgICAgICAgICA8L3RkPg0KICAgICAgICAgICAgIDwvdHI+DQogICAgICAg
+PCEtLSBlbmQgRkVBVFVSRSAxIC0tPiAgDQogICAgDQogICAgICAgPCEtLSBGRUFUVVJFIDMgLS0+
+DQogICAgICAgPHRyPg0KICAgICAgICAgICAgICA8dGQgYWxpZ249ImNlbnRlciIgdmFsaWduPSJ0
+b3AiIHN0eWxlPSJtYXJnaW46MCBhdXRvOyB2ZXJ0aWNhbC1hbGlnbjp0b3A7IHBhZGRpbmctdG9w
+OjEwMHB4OyI+DQogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJmb250LXNpemU6MDsiPg0K
+ICAgICAgICAgICAgPCEtLVtpZiBtc29dPg0KICAgICAgICAgICAgPHRhYmxlIGJvcmRlcj0iMCIg
+Y2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiByb2xlPSJwcmVzZW50YXRpb24iYWxpZ249
+ImNlbnRlciI+PHRyPjx0ZCBhbGlnbj0iY2VudGVyIiB2YWxpZ249InRvcCIgd2lkdGg9IjM4JSI+
+DQogICAgICAgICAgICA8IVtlbmRpZl0tLT4NCiAgICAgICAgICAgIDxkaXYgc3R5bGU9ImRpc3Bs
+YXk6aW5saW5lLWJsb2NrOyB2ZXJ0aWNhbC1hbGlnbjp0b3A7IHdpZHRoOjM4JTsgbWluLXdpZHRo
+OjE0MHB4OyBtYXgtd2lkdGg6MTAwJTsgd2lkdGg6LXdlYmtpdC1jYWxjKDIzMDQwMHB4IC0gNDgw
+MDAlKTsgbWluLXdpZHRoOi13ZWJraXQtY2FsYygzOCUpOyB3aWR0aDpjYWxjKDIzMDQwMHB4IC0g
+NDgwMDAlKTsgbWluLXdpZHRoOmNhbGMoMzglKTsiPg0KICAgICAgICAgICAgPCEtLSBsZWZ0IC0t
+Pg0KICAgICAgICAgICAgPHRhYmxlIGFsaWduPSJjZW50ZXIiIGJvcmRlcj0iMCIgY2VsbHBhZGRp
+bmc9IjAiIGNlbGxzcGFjaW5nPSIwIiByb2xlPSJwcmVzZW50YXRpb24iIHdpZHRoPSIxMDAlIj4N
+CiAgICAgICAgICAgICA8dHI+DQogICAgICAgICAgICAgIA0KICAgICAgICAgICAgICA8dGQgdmFs
+aWduPSJ0b3AiIHN0eWxlPSJjb2xvcjojNTA1MDUwOyBmb250LWZhbWlseTphZG9iZS1jbGVhbiwg
+SGVsdmV0aWNhIE5ldWUsIEhlbHZldGljYSwgVmVyZGFuYSwgQXJpYWwsIHNhbnMtc2VyaWY7IGZv
+bnQtc2l6ZTozNnB4OyBsaW5lLWhlaWdodDo0MHB4OyBwYWRkaW5nLWJvdHRvbTozMnB4OyB2ZXJ0
+aWNhbC1hbGlnbjp0b3A7Ij48aW1nIGNsYXNzPSJtb2JpbGUtaWNvbiIgYWxpZ249ImxlZnQiDQog
+ICAgICAgICAgICAgICAgYWx0PSJFYXN5IHBlYXN5IFBERnMiDQogICAgICAgICAgICAgICAgIHNy
+Yz0iaHR0cHM6Ly9sYW5kaW5nLmFkb2JlLmNvbS9kYW0vZ2xvYmFsL2ltYWdlcy9wZW5jaWwtaWNv
+bi5ibGFjay4xMzB4MTMwLnBuZyIgDQogICAgICAgIHNyY3NldD0iaHR0cHM6Ly9sYW5kaW5nLmFk
+b2JlLmNvbS9kYW0vZ2xvYmFsL2ltYWdlcy9wZW5jaWwtaWNvbi5ibGFjay45Nng5Ni5wbmcgNjIx
+dywgaHR0cHM6Ly9sYW5kaW5nLmFkb2JlLmNvbS9kYW0vZ2xvYmFsL2ltYWdlcy9wZW5jaWwtaWNv
+bi5ibGFjay4xMzB4MTMwLnBuZyAxMjAwdyINCiAgICAgICAgc2l6ZXM9IihtYXgtd2lkdGg6IDQ4
+MHB4KSA1MHZ3Ig0KICAgICAgICB3aWR0aD0iNjUiIGhlaWdodD0iYXV0byINCiAgICAgICAgYm9y
+ZGVyPSIwIiBoc3BhY2U9IjAiIHZzcGFjZT0iMCIgc3R5bGU9ImNvbG9yOiMyQTJBMkE7IGZvbnQt
+ZmFtaWx5OmFkb2JlLWNsZWFuLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmOyBmb250LXNp
+emU6MjBweDsgbGluZS1oZWlnaHQ6MjRweDsgZGlzcGxheTppbmxpbmUtYmxvY2s7IHZlcnRpY2Fs
+LWFsaWduOnRvcDsgYWxpZ246bGVmdDsiLz48L3RkPg0KICAgICAgICAgICAgICANCiAgICAgICAg
+ICAgICA8L3RyPg0KICAgICAgICAgICAgPC90YWJsZT4NCiAgICAgICAgICAgIDwhLS0gRU5EIGxl
+ZnQgLS0+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwhLS1baWYgbXNvXT48L3Rk
+Pjx0ZCBhbGlnbj0iY2VudGVyIiB2YWxpZ249InRvcCIgd2lkdGg9IjUwJSI+DQogICAgICAgICAg
+ICA8IVtlbmRpZl0tLT4NCiAgICAgICAgICAgIDxkaXYgc3R5bGU9ImRpc3BsYXk6aW5saW5lLWJs
+b2NrOyB2ZXJ0aWNhbC1hbGlnbjp0b3A7IHdpZHRoOjUwJTsgbWluLXdpZHRoOjI4NHB4OyBtYXgt
+d2lkdGg6MTAwJTsgd2lkdGg6LXdlYmtpdC1jYWxjKDIzMDQwMHB4IC0gNDgwMDAlKTsgbWluLXdp
+ZHRoOi13ZWJraXQtY2FsYyg1MCUpOyB3aWR0aDpjYWxjKDIzMDQwMHB4IC0gNDgwMDAlKTsgbWlu
+LXdpZHRoOmNhbGMoNTAlKTsiPg0KICAgICAgICAgICAgPCEtLSByaWdodCAtLT4NCiAgICAgICAg
+ICAgIDx0YWJsZSBhbGlnbj0iY2VudGVyIiBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxs
+c3BhY2luZz0iMCIgcm9sZT0icHJlc2VudGF0aW9uIiB3aWR0aD0iMTAwJSI+DQogICAgICAgICAg
+ICAgPHRyPg0KICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgPHRkIHN0eWxlPSJjb2xvcjoj
+MDAwMDAwOyBmb250LWZhbWlseTphZG9iZS1jbGVhbiwgSGVsdmV0aWNhIE5ldWUsIEhlbHZldGlj
+YSwgVmVyZGFuYSwgQXJpYWwsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToyMnB4OyBsaW5lLWhlaWdo
+dDoyOXB4OyBwYWRkaW5nLWJvdHRvbTo2cHg7Ij48c3Ryb25nPkVhc3kgcGVhc3kgUERGcy48L3N0
+cm9uZz48L3RkPg0KICAgICAgICAgICAgICANCiAgICAgICAgICAgICA8L3RyPg0KICAgICAgICAg
+ICAgIDx0cj4NCiAgICAgICAgICAgICAgDQogICAgICAgICAgICAgIDx0ZCBzdHlsZT0iY29sb3I6
+IzUwNTA1MDsgZm9udC1mYW1pbHk6YWRvYmUtY2xlYW4sIEhlbHZldGljYSBOZXVlLCBIZWx2ZXRp
+Y2EsIFZlcmRhbmEsIEFyaWFsLCBzYW5zLXNlcmlmOyBmb250LXNpemU6MTZweDsgbGluZS1oZWln
+aHQ6MjRweDsiPkVkaXQgYSBQREYgaW5zdGFudGx5LiBDaGFuZ2UgdGV4dCBhbmQgDQppbWFnZXMg
+aW4gUERGcyBvbmxpbmUgYW5kIG9uJm5ic3A7dGltZS4gPGEgaHJlZj0iaHR0cHM6Ly90LWluZm8u
+bWFpbC5hZG9iZS5jb20vci8/aWQ9aGU1MjU3YTg3LGY4MDUxMzI1LGJkY2JjNzYxJmU9Y0RFOVZE
+TXlVRXhUUmt3JnM9Q1RHRU5sVlZMVDllX19ybkxRamNzT01JcWNDaFdKeFlRLS1wRFZtV24yUSIg
+dGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJjb2xvcjojMTQ3M2U2OyB3aGl0ZS1zcGFjZTogbm93cmFw
+OyI+R2V0Jm5ic3A7c3RhcnRlZDwvYT48L3RkPg0KICAgICAgICAgICAgICANCiAgICAgICAgICAg
+ICA8L3RyPg0KICAgICAgICAgICAgPC90YWJsZT4NCiAgICAgICAgICAgIDwhLS0gRU5EIHJpZ2h0
+IC0tPg0KICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgPCEtLVtpZiBtc29dPg0KICAgICAg
+ICAgIDwvdGQ+PC90cj48L3RhYmxlPg0KICAgICAgICAgIDwhW2VuZGlmXS0tPg0KICAgICAgICAg
+IDwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvdGQ+DQogICAgICAgICAgICAgPC90cj4NCiAgICAg
+ICA8IS0tIGVuZCBGRUFUVVJFIDMgLS0+DQogICAgICANCiAgICAgICAgICAgIDwvdGFibGU+DQog
+ICAgICAgICAgICA8IS0tIEVORCAyIGNvbHVtbnMgLS0+ICAgDQogICAgICAgICAgICA8IS0tIENU
+QS0xIC0tPg0KICAgICAgICAgICAgPHRhYmxlIGNsYXNzPSJjb2x1bW4td2lkdGgiIGFsaWduPSJj
+ZW50ZXIiIHdpZHRoPSI0ODAiIGJvcmRlcj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5n
+PSIwIiByb2xlPSJwcmVzZW50YXRpb24iIHN0eWxlPSJ3aWR0aDo0ODBweDsiPg0KICAgICAgICAg
+ICAgIDx0cj4NCiAgICAgICAgICAgICAgPHRkIHN0eWxlPSJjb2xvcjojMTQ3M0U2OyBmb250LWZh
+bWlseTphZG9iZS1jbGVhbiwgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZjsgZm9udC1zaXpl
+OjE1cHg7IGxpbmUtaGVpZ2h0OjIwcHg7IHBhZGRpbmctdG9wOjgwcHg7IHBhZGRpbmctYm90dG9t
+OjEwMHB4OyI+PGRpdj48IS0tW2lmIG1zb10+DQogICAgICAgICAgPHRhYmxlIGNsYXNzPSJmdWxs
+LXdpZHRoIiBhbGlnbj0ibGVmdCIgd2lkdGg9IjE4MCIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0i
+MCIgY2VsbHNwYWNpbmc9IjAiIHJvbGU9InByZXNlbnRhdGlvbiIgc3R5bGU9IndpZHRoOjE4MHB4
+OyI+DQogICAgICAgICAgPHRyPg0KICAgICAgICAgIDx0ZCBoZWlnaHQ9IjQwIiB2YWxpZ249Im1p
+ZGRsZSIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IzE0NzNFNjsgZm9udC1mYW1pbHk6IGFkb2Jl
+LWNsZWFuLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmOyBoZWlnaHQ6NDBweDsiPg0KICAg
+ICAgICAgIDxjZW50ZXI+DQogICAgICAgICAgPCFbZW5kaWZdLS0+DQogICAgICAgICAgPGEgY2xh
+c3M9ImJ1dHRvbiIgaHJlZj0iaHR0cHM6Ly90LWluZm8ubWFpbC5hZG9iZS5jb20vci8/aWQ9aGU1
+MjU3YTg3LGY4MDUxMzI1LGJkY2JjNzYyJmU9Y0RFOVZETXlVRXhUUmt3JnM9VG5FMUpPVDZaVXNU
+ajNZX0N0QlUxdmQyOTVRdUREczNxcWhWczNvMU9TRSIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJi
+YWNrZ3JvdW5kLWNvbG9yOiMxNDczRTY7Ym9yZGVyLXJhZGl1czoyMHB4O2NvbG9yOiNmZmZmZmY7
+ZGlzcGxheTppbmxpbmUtYmxvY2s7Zm9udC1zaXplOjE2cHg7bGluZS1oZWlnaHQ6NDBweDt0ZXh0
+LWFsaWduOmNlbnRlcjt0ZXh0LWRlY29yYXRpb246bm9uZTt3aWR0aDoxODBweDstd2Via2l0LXRl
+eHQtc2l6ZS1hZGp1c3Q6bm9uZTsiPjxzdHJvbmc+R2V0IHN0YXJ0ZWQ8L3N0cm9uZz48L2E+DQog
+ICAgICAgICAgPCEtLVtpZiBtc29dPg0KICAgICAgICAgIDwvY2VudGVyPg0KICAgICAgICAgIDwv
+dGQ+DQogICAgICAgICAgPC90cj4NCiAgICAgICAgICA8L3RhYmxlPg0KICAgICAgICA8IVtlbmRp
+Zl0tLT48L2Rpdj4NCiAgICAgICAgPC90ZD4NCiAgICAgICAgICAgICA8L3RyPg0KICAgICAgICAg
+ICAgPC90YWJsZT4NCiAgICAgICAgICAgIDwhLS0gRU5EIENUQS0xIC0tPg0KICAgICAgICAgICA8
+IS0tIEVORCBlbWFpbCBjb250ZW50IC0tPg0KICAgICAgICAgICA8L3RkPg0KICAgICAgICA8L3Ry
+Pg0KICAgIDx0cj4NCiAgICA8dGQgYmdjb2xvcj0iI0Y1RjVGNSIgc3R5bGU9ImJhY2tncm91bmQt
+Y29sb3I6I0Y1RjVGNTsiPg0KICAgICAgPCEtLSBiYW5uZXIgLS0+DQogICAgICAgICAgICA8dGFi
+bGUgY2xhc3M9ImZ1bGwtd2lkdGgiIGFsaWduPSJjZW50ZXIiIHdpZHRoPSI2MDAiIGJvcmRlcj0i
+MCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiByb2xlPSJwcmVzZW50YXRpb24iIGJn
+Y29sb3I9IiNGQTBGMDAiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNGQTBGMDA7IHdpZHRoOjYw
+MHB4OyI+DQogICAgICAgPHRyPg0KICAgICAgICA8dGQgY2xhc3M9IndlYiIgd2lkdGg9IjIwIiBz
+dHlsZT0id2lkdGg6MjBweDsiPiZuYnNwOzwvdGQ+DQogICAgICAgIDx0ZCB3aWR0aD0iMzAiIHN0
+eWxlPSJ3aWR0aDozMHB4OyI+Jm5ic3A7PC90ZD4NCiAgICAgICAgICAgICAgPHRkIHN0eWxlPSJj
+b2xvcjojZmZmZmZmOyBmb250LWZhbWlseTphZG9iZS1jbGVhbiwgSGVsdmV0aWNhIE5ldWUsIEhl
+bHZldGljYSwgVmVyZGFuYSwgQXJpYWwsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNXB4OyBsaW5l
+LWhlaWdodDoyMHB4OyBwYWRkaW5nLXRvcDo1cHg7IHBhZGRpbmctYm90dG9tOjVweDsiPjxzdHJv
+bmc+QnVzaW5lc3MgbW92ZXMgd2l0aCBBZG9iZS48L3N0cm9uZz48L3RkPg0KICAgICAgICA8dGQg
+d2lkdGg9IjMwIiBzdHlsZT0id2lkdGg6MzBweDsiPiZuYnNwOzwvdGQ+DQogICAgICAgIDx0ZCBj
+bGFzcz0id2ViIiB3aWR0aD0iMjAiIHN0eWxlPSJ3aWR0aDoyMHB4OyI+Jm5ic3A7PC90ZD4NCiAg
+ICAgICAgICAgICA8L3RyPg0KICAgICAgICAgICAgPC90YWJsZT4NCiAgICAgIDwhLS0gRU5EIGJh
+bm5lciAtLT4gIA0KICAgICANCiAgICAgIDwhLS0gbG9nbyAmIHNvY2lhbCAtLT4NCiAgICAgIDx0
+YWJsZSBjbGFzcz0iZW1haWwtd2lkdGgiIGFsaWduPSJjZW50ZXIiIHdpZHRoPSI1MDAiIGJvcmRl
+cj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiByb2xlPSJwcmVzZW50YXRpb24i
+IHN0eWxlPSJ3aWR0aDo1MDBweDsiPg0KICAgICA8dHI+DQogICAgICA8dGQgdmFsaWduPSJtaWRk
+bGUiIHN0eWxlPSJwYWRkaW5nLXRvcDo1MHB4OyI+DQogICAgICAgIDxkaXYgc3R5bGU9ImZvbnQt
+c2l6ZTowOyI+DQogICAgICAgICAgPCEtLVtpZiBtc29dPg0KICAgICAgICAgIDx0YWJsZSBjbGFz
+cz0iZW1haWwtd2lkdGgiIGFsaWduPSJjZW50ZXIiIHdpZHRoPSI1MDAiIGJvcmRlcj0iMCIgY2Vs
+bHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiByb2xlPSJwcmVzZW50YXRpb24iIHN0eWxlPSJ3
+aWR0aDo1MDBweDsiPjx0cj48dGQgYWxpZ249ImxlZnQiIHZhbGlnbj0ibWlkZGxlIiB3aWR0aD0i
+NTAlIj4NCiAgICAgICAgICA8IVtlbmRpZl0tLT4NCiAgICAgICAgICA8ZGl2IHN0eWxlPSJkaXNw
+bGF5OmlubGluZS1ibG9jazsgdmVydGljYWwtYWxpZ246bWlkZGxlOyB3aWR0aDo1MCU7IG1pbi13
+aWR0aDoyNTBweDsgbWF4LXdpZHRoOjEwMCU7IHdpZHRoOi13ZWJraXQtY2FsYygyMzA0MDBweCAt
+IDQ4MDAwJSk7IG1pbi13aWR0aDotd2Via2l0LWNhbGMoNTAlKTsgd2lkdGg6Y2FsYygyMzA0MDBw
+eCAtIDQ4MDAwJSk7IG1pbi13aWR0aDpjYWxjKDUwJSk7Ij4NCiAgICAgICAgICA8IS0tIGxlZnQg
+LS0+DQogICAgICAgICAgPHRhYmxlIGFsaWduPSJsZWZ0IiBib3JkZXI9IjAiIGNlbGxwYWRkaW5n
+PSIwIiBjZWxsc3BhY2luZz0iMCIgcm9sZT0icHJlc2VudGF0aW9uIiB3aWR0aD0iMTAwJSI+DQog
+ICAgICAgICAgIDx0cj4NCiAgICAgICAgICAgIDx0ZCBzdHlsZT0iY29sb3I6I0VCMTAwMDsgZm9u
+dC1mYW1pbHk6YWRvYmUtY2xlYW4sIEhlbHZldGljYSBOZXVlLCBIZWx2ZXRpY2EsIFZlcmRhbmEs
+IEFyaWFsLCBzYW5zLXNlcmlmOyBmb250LXNpemU6MTJweDsgbGluZS1oZWlnaHQ6MThweDsiPjxp
+bWcgYWx0PSJBZG9iZSIgc3JjPSJodHRwczovL2xhbmRpbmcuYWRvYmUuY29tL2RhbS9nbG9iYWwv
+aW1hZ2VzL2Fkb2JlLWxvZ28uY2xhc3NpYy4xNjB4MjIyLnBuZyIgd2lkdGg9IjMwIiBoZWlnaHQ9
+ImF1dG8iIGJvcmRlcj0iMCIgaHNwYWNlPSIwIiB2c3BhY2U9IjAiIHN0eWxlPSJjb2xvcjojRUIx
+MDAwOyBmb250LWZhbWlseTphZG9iZS1jbGVhbiwgSGVsdmV0aWNhIE5ldWUsIEhlbHZldGljYSwg
+VmVyZGFuYSwgQXJpYWwsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxMnB4OyBsaW5lLWhlaWdodDox
+OHB4OyBkaXNwbGF5OmJsb2NrOyB2ZXJ0aWNhbC1hbGlnbjp0b3A7Ii8+PC90ZD4NCiAgICAgICAg
+ICAgPC90cj4NCiAgICAgICAgICA8L3RhYmxlPg0KICAgICAgICAgIDwhLS0gRU5EIGxlZnQgLS0+
+DQogICAgICAgICAgPC9kaXY+DQogICAgICAgICAgPCEtLVtpZiBtc29dPg0KICAgICAgICAgIDwv
+dGQ+PHRkIGFsaWduPSJyaWdodCIgdmFsaWduPSJtaWRkbGUiIHdpZHRoPSI1MCUiPg0KICAgICAg
+ICAgIDwhW2VuZGlmXS0tPg0KICAgICAgICAgIDxkaXYgc3R5bGU9ImRpc3BsYXk6aW5saW5lLWJs
+b2NrOyB2ZXJ0aWNhbC1hbGlnbjptaWRkbGU7IHdpZHRoOjUwJTsgbWluLXdpZHRoOjI1MHB4OyBt
+YXgtd2lkdGg6MTAwJTsgd2lkdGg6LXdlYmtpdC1jYWxjKDIzMDQwMHB4IC0gNDgwMDAlKTsgbWlu
+LXdpZHRoOi13ZWJraXQtY2FsYyg1MCUpOyB3aWR0aDpjYWxjKDIzMDQwMHB4IC0gNDgwMDAlKTsg
+bWluLXdpZHRoOmNhbGMoNTAlKTsiPg0KICAgICAgICAgIDwhLS0gcmlnaHQgLS0+DQogICAgICAg
+ICAgPHRhYmxlIGNsYXNzPSJzb2NpYWwiIGFsaWduPSJyaWdodCIgd2lkdGg9ImF1dG8iIGJvcmRl
+cj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiByb2xlPSJwcmVzZW50YXRpb24i
+IHN0eWxlPSJmbG9hdDpyaWdodDsiPg0KICAgICAgICAgICA8dHI+DQogICAgICAgICAgICA8dGQg
+c3R5bGU9ImNvbG9yOiM5NTk1OTU7IGZvbnQtZmFtaWx5OmFkb2JlLWNsZWFuLCBIZWx2ZXRpY2Eg
+TmV1ZSwgSGVsdmV0aWNhLCBWZXJkYW5hLCBBcmlhbCwgc2Fucy1zZXJpZjsgZm9udC1zaXplOjEy
+cHg7IGxpbmUtaGVpZ2h0OjEycHg7Ij48YSBocmVmPSJodHRwczovL3QtaW5mby5tYWlsLmFkb2Jl
+LmNvbS9yLz9pZD1oZTUyNTdhODcsZjgwNTEzMjUsYmRjYmM3NjMiIGFsaWFzPSJGYWNlYm9vayIg
+dGFyZ2V0PSJfYmxhbmsiPjxpbWcgY2xhc3M9InNvY2lhbCIgYWx0PSJGYWNlYm9vayIgc3JjPSJo
+dHRwczovL2xhbmRpbmcuYWRvYmUuY29tL2RhbS9nbG9iYWwvaW1hZ2VzL3NvY2lhbC9mYWNlYm9v
+ay45NTk1OTUucG5nIiB3aWR0aD0iOSIgaGVpZ2h0PSIxNyIgYm9yZGVyPSIwIiBoc3BhY2U9IjAi
+IHZzcGFjZT0iMCIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7IHZlcnRpY2FsLWFsaWduOnRvcDsiLz48
+L2E+PC90ZD4NCiAgICAgICAgICAgIDx0ZCB3aWR0aD0iMzAiIHN0eWxlPSJ3aWR0aDozMHB4OyI+
+Jm5ic3A7PC90ZD4NCiAgICAgICAgICAgIDx0ZCBzdHlsZT0iY29sb3I6Izk1OTU5NTsgZm9udC1m
+YW1pbHk6YWRvYmUtY2xlYW4sIEhlbHZldGljYSBOZXVlLCBIZWx2ZXRpY2EsIFZlcmRhbmEsIEFy
+aWFsLCBzYW5zLXNlcmlmOyBmb250LXNpemU6MTJweDsgbGluZS1oZWlnaHQ6MTJweDsiPjxhIGhy
+ZWY9Imh0dHBzOi8vdC1pbmZvLm1haWwuYWRvYmUuY29tL3IvP2lkPWhlNTI1N2E4NyxmODA1MTMy
+NSxiZGNiYzc2NCIgYWxpYXM9IkxpbmtlZEluIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBjbGFzcz0i
+c29jaWFsIiBhbHQ9IkxpbmtlZEluIiBzcmM9Imh0dHBzOi8vbGFuZGluZy5hZG9iZS5jb20vZGFt
+L2dsb2JhbC9pbWFnZXMvc29jaWFsL2xpbmtlZGluLjk1OTU5NS5wbmciIHdpZHRoPSIxNyIgaGVp
+Z2h0PSIxNyIgYm9yZGVyPSIwIiBoc3BhY2U9IjAiIHZzcGFjZT0iMCIgc3R5bGU9ImRpc3BsYXk6
+YmxvY2s7IHZlcnRpY2FsLWFsaWduOnRvcDsiLz48L2E+PC90ZD4NCiAgICAgICAgICAgIDx0ZCB3
+aWR0aD0iMzAiIHN0eWxlPSJ3aWR0aDozMHB4OyI+Jm5ic3A7PC90ZD4NCiAgICAgICAgICAgIDx0
+ZCBzdHlsZT0iY29sb3I6Izk1OTU5NTsgZm9udC1mYW1pbHk6YWRvYmUtY2xlYW4sIEhlbHZldGlj
+YSBOZXVlLCBIZWx2ZXRpY2EsIFZlcmRhbmEsIEFyaWFsLCBzYW5zLXNlcmlmOyBmb250LXNpemU6
+MTJweDsgbGluZS1oZWlnaHQ6MTJweDsiPjxhIGhyZWY9Imh0dHBzOi8vdC1pbmZvLm1haWwuYWRv
+YmUuY29tL3IvP2lkPWhlNTI1N2E4NyxmODA1MTMyNSxiZGNiYzczZiIgYWxpYXM9IlR3aXR0ZXIi
+IHRhcmdldD0iX2JsYW5rIj48aW1nIGNsYXNzPSJzb2NpYWwiIGFsdD0iVHdpdHRlciIgc3JjPSJo
+dHRwczovL2xhbmRpbmcuYWRvYmUuY29tL2RhbS9nbG9iYWwvaW1hZ2VzL3NvY2lhbC90d2l0dGVy
+Ljk1OTU5NS5wbmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIxNyIgYm9yZGVyPSIwIiBoc3BhY2U9IjAi
+IHZzcGFjZT0iMCIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7IHZlcnRpY2FsLWFsaWduOnRvcDsiLz48
+L2E+PC90ZD4NCiAgICAgICAgICAgPC90cj4NCiAgICAgICAgICA8L3RhYmxlPg0KICAgICAgICAg
+IDwhLS0gRU5EIHJpZ2h0IC0tPg0KICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8IS0tW2lmIG1z
+b10+DQogICAgICAgIDwvdGQ+PC90cj48L3RhYmxlPg0KICAgICAgICA8IVtlbmRpZl0tLT4NCiAg
+ICAgICAgPC9kaXY+DQogICAgICA8L3RkPg0KICAgICAgIDwvdHI+DQogICAgICA8L3RhYmxlPiAg
+ICAgIA0KICAgICAgPCEtLSBFTkQgbG9nbyAmIHNvY2lhbCAtLT4gICAgDQogICAgICANCiAgICAg
+IDwhLS0gbGVnYWwtLT4NCiAgICAgIDx0YWJsZSBjbGFzcz0iZW1haWwtd2lkdGgiIGFsaWduPSJj
+ZW50ZXIiIHdpZHRoPSI1MDAiIGJvcmRlcj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5n
+PSIwIiByb2xlPSJwcmVzZW50YXRpb24iIHN0eWxlPSJ3aWR0aDo1MDBweDsiPg0KPHRyPg0KPHRk
+IGNsYXNzPSJsZWdhbCIgc3R5bGU9ImNvbG9yOiM5NTk1OTU7IGZvbnQtZmFtaWx5OmFkb2JlLWNs
+ZWFuLCBIZWx2ZXRpY2EgTmV1ZSwgSGVsdmV0aWNhLCBWZXJkYW5hLCBBcmlhbCwgc2Fucy1zZXJp
+ZjsgZm9udC1zaXplOjExcHg7IGxpbmUtaGVpZ2h0OjE4cHg7IHBhZGRpbmctdG9wOjUwcHg7IHBh
+ZGRpbmctYm90dG9tOjEwMHB4OyI+ICAgDQpBZG9iZSwgdGhlIEFkb2JlIGxvZ28sIENyZWF0aXZl
+IENsb3VkLCBhbmQgdGhlIENyZWF0aXZlIENsb3VkIGxvZ28gYXJlIGVpdGhlciByZWdpc3RlcmVk
+IHRyYWRlbWFya3Mgb3IgdHJhZGVtYXJrcyBvZiBBZG9iZSBpbiB0aGUgVW5pdGVkIFN0YXRlcyBh
+bmQvb3Igb3RoZXIgY291bnRyaWVzLjxici8+PGJyLz4gIFRoaXMgaXMgbm90IGEgY29tcHJlaGVu
+c2l2ZSBsaXN0IG9mIEFkb2JlIHRyYWRlbWFya3MuIEFsbCBvdGhlciB0cmFkZW1hcmtzIGFyZSB0
+aGUgcHJvcGVydHkgb2YgdGhlaXIgcmVzcGVjdGl2ZSBvd25lcnMuIDxhIGhyZWY9Imh0dHBzOi8v
+dC1pbmZvLm1haWwuYWRvYmUuY29tL3IvP2lkPWhlNTI1N2E4NyxmODA1MTMyNSxiZGNiYzc0MCIg
+YWxpYXM9IkZPT1RFUiAtIFRyYWRlbWFyayBHdWlkZWxpbmVzIiB0YXJnZXQ9Il9ibGFuayIgc3R5
+bGU9ImNvbG9yOiM5NTk1OTU7Ij5BZG9iZSBUcmFkZW1hcmsgR3VpZGVsaW5lczwvYT4uIDxici8+
+PGJyLz4NCiZjb3B5OyAyMDIyIEFkb2JlIEluYy4gQWxsJm5ic3A7cmlnaHRzJm5ic3A7cmVzZXJ2
+ZWQuPGJyLz48YnIvPg0KVGhpcyBpcyBhIG1hcmtldGluZyBlbWFpbCBmcm9tIEFkb2JlIFN5c3Rl
+bXMgU29mdHdhcmUgSXJlbGFuZCBMaW1pdGVkLCA0LTYgUml2ZXJ3YWxrLCBDaXR5d2VzdCBCdXNp
+bmVzcyBQYXJrLCBEdWJsaW4gMjQsIElyZWxhbmQuICA8YSBzdHlsZT0iVEVYVC1ERUNPUkFUSU9O
+OiB1bmRlcmxpbmU7IENPTE9SOiAjYTFhMWExIiBocmVmPSJodHRwczovL3QtaW5mby5tYWlsLmFk
+b2JlLmNvbS9yLz9pZD1oZTUyNTdhODcsZjgwNTEzMjUsYmRjYmM3NWEmZT1jREU5SlRRd1dsVkVV
+RUp0WlVnMGVFVllSWHBGVXpZNVpuVTRWbUpxVWtkT1QzUlFRVlpRTVdkUU1HaEJORGMyVjFsYU9V
+NHllbkJQVGpSWk0xQnNaSFE0V2pCMmFTWndNajBtYkc5alBXbHVKbkF6UFRNMSZzPTVlelNJelM3
+WVE0UjhmUFctZlVQT1FxbUFJWFJZYnJMTEd6MjBWYjB0UFUiIHRhcmdldD0iX2JsYW5rIiBjbGFz
+cz0ib3B0X291dCIgYWxpYXM9IlVuc3Vic2NyaWJlIiBfdHlwZT0ib3B0b3V0IiBfbGFiZWw9Ik9w
+dC1vdXQgbGluayI+Q2xpY2smbmJzcDtoZXJlPC9BPiAgdG8gdW5zdWJzY3JpYmUsIG9yIHNlbmQg
+YW4gdW5zdWJzY3JpYmUgcmVxdWVzdCB0byB0aGUgYWRkcmVzcyBhYm92ZS48YnIvPjxici8+DQpZ
+b3VyIHByaXZhY3kgaXMgaW1wb3J0YW50IHRvIHVzLiBQbGVhc2UgcmV2aWV3IEFkb2JlJ3MgUHJp
+dmFjeSBQb2xpY3kgYnkgY2xpY2tpbmcgaGVyZTo8YnIvPg0KPGEgaHJlZj0iaHR0cHM6Ly90LWlu
+Zm8ubWFpbC5hZG9iZS5jb20vci8/aWQ9aGU1MjU3YTg3LGY4MDUxMzI1LGJkY2JjNzQyIiBhbGlh
+cz0iRk9PVEVSIC0gUHJpdmFjeSBQb2xpY3kiIHRhcmdldD0iX2JsYW5rIiBzdHlsZT0iY29sb3I6
+Izk1OTU5NTsgdGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZTsiPnd3dy5hZG9iZS5jb20vaW4vcHJp
+dmFjeS5odG1sPC9hPi48YnIvPjxici8+DQpQTEVBU0UgRE8gTk9UIFJFUExZIFRPIFRISVMgTUVT
+U0FHRS4gVG8gb2J0YWluIGluZm9ybWF0aW9uIG9uIGhvdyB0byBjb250YWN0IEFkb2JlLCB2aXNp
+dCB0aGUgd2ViIGF0IDxhIGhyZWY9Imh0dHBzOi8vdC1pbmZvLm1haWwuYWRvYmUuY29tL3IvP2lk
+PWhlNTI1N2E4NyxmODA1MTMyNSxiZGNiYzc0MyIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJjb2xv
+cjojOTU5NTk1OyB0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lOyIgYWxpYXM9IkZPT1RFUiAtIENv
+bnRhY3QgQWRvYmUiPmhlbHB4LmFkb2JlLmNvbS9pbi9zdXBwb3J0Lmh0bWw8L2E+LiBJZiB5b3Ug
+aGF2ZSBhIHByaXZhY3ktcmVsYXRlZCBjb21wbGFpbnQsIHNlbmQgaXQgdG8gPGEgaHJlZj0ibWFp
+bHRvOnByaXZhY3lAYWRvYmUuY29tIiBzdHlsZT0iY29sb3I6Izk1OTU5NTt0ZXh0LWRlY29yYXRp
+b246dW5kZXJsaW5lOyI+cHJpdmFjeUBhZG9iZS5jb208L2E+Ljxici8+DQo8ZGl2IHN0eWxlPSJt
+YXJnaW4tYm90dG9tOjEycHg7IG1hcmdpbi10b3A6MTBweDtjb2xvcjojOTU5NTk1OyI+VGhpcyBl
+bWFpbCBoYXMgYmVlbiBzZW50IHRvIDxhIGhyZWY9Im1haWx0bzpyZWxheGF0aW9ubXVzaWNzdHJl
+c3NmcmVlQGdtYWlsLmNvbSIgc3R5bGU9ImNvbG9yOiM5NTk1OTU7dGV4dC1kZWNvcmF0aW9uOnVu
+ZGVybGluZTsiPnJlbGF4YXRpb25tdXNpY3N0cmVzc2ZyZWVAZ21haWwuY29tPC9hPg0KPGJyPg0K
+PGJyPg0KPHNwYW4gY2xhc3M9IndlYiI+DQoNCjxhIGhyZWY9Imh0dHBzOi8vdC1pbmZvLm1haWwu
+YWRvYmUuY29tL3IvP2lkPWhlNTI1N2E4NyxmODA1MTMyNSxiZGNiYzc2YiZlPWNERTlKVFF3VFd0
+Q2JqazFiMmR6WTNZbE1rWjZUMjlwZG1aSmVtMDNlRUpaWW05MlZrUTNlR2ROTW1wdGRVRnlTRlUw
+SlRORSZzPXhma3BNT2VhQkFObmNoSGI4V0Z0SXRDaXV4SG42aGc0WmhsUDV5VmRIc2ciIF9sYWJl
+bD0iTWlycm9yIFBhZ2UiIF90eXBlPSJtaXJyb3JQYWdlIiBhbGlhcz0iUmVhZCBvbmxpbmUiIHRh
+cmdldD0iX2JsYW5rIiBzdHlsZT0iY29sb3I6Izk5OTk5OTsgdGV4dC1kZWNvcmF0aW9uOiB1bmRl
+cmxpbmU7Ij5SZWFkJm5ic3A7b25saW5lPC9hPg0KPC90ZD4NCjwvdHI+DQo8L3RhYmxlPg0KICAg
+ICAgPCEtLSBFTkQgbGVnYWwtLT4NCiAgICAgIA0KICAgIDwvdGQ+DQogICAgPC90cj4NCiAgICA8
+L3RhYmxlPg0KICAgIDwvdGQ+DQogIDwvdHI+DQo8L3RhYmxlPg0KPC9ib2R5Pg0KPC9odG1sPg0K
+ICANCiAgPGltZyBoZWlnaHQ9JzAnIHdpZHRoPScwJyBhbHQ9Jycgc3JjPSdodHRwczovL3QtaW5m
+by5tYWlsLmFkb2JlLmNvbS9yLz9pZD1oZTUyNTdhODcsZjgwNTEzMjUsMScvPjxpbWcgaGVpZ2h0
+PScwJyB3aWR0aD0nMCcgYWx0PScnIHNyYz0naHR0cHM6Ly9hZG9iZS5kZW1kZXgubmV0L2V2ZW50
+P2Nfc3luY3BsYWNlbWVudD1lbWFpbCZkX2NpZD04MTMlMDE1ODY4MDNlMTYxZDk5Y2MxMGE0OTVl
+NjInLz48L0JPRFk+DQo8L0hUTUw+DQoNCg==
+
+--=-27KK4vbJVzhpfKeqkOyjPQ==--

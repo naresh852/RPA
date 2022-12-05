@@ -1,0 +1,7 @@
+Dear User
+
+This Error has occured at time {0}.
+SO you please take required action to make it work.
+
+Thanks,
+Google LLT
